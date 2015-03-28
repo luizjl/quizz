@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+import ria.especializacao.inf.ufg.httpconnection.QuizService;
+
 
 public class PrincipalActivity extends ActionBarActivity {
 
@@ -23,6 +25,10 @@ public class PrincipalActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+        QuizService service = new QuizService();
+        service.execute();
+
     }
 
 
