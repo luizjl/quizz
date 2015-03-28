@@ -10,6 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class PrincipalActivity extends ActionBarActivity {
@@ -41,7 +48,8 @@ public class PrincipalActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings)
+        {
             return true;
         }
 
@@ -51,15 +59,66 @@ public class PrincipalActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
+    public class PlaceholderFragment extends Fragment
+    {
+        public PlaceholderFragment()
+        {
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+                                 Bundle savedInstanceState)
+        {
+            ListView menuPrincipal;
+
+            final String[] itemName =
+            {
+                "Começar",
+                "Enviar Questão",
+                "Favoritos",
+                "Estatísticas",
+            };
+
+            Integer[] imgId =
+            {
+                R.mipmap.ic_clock,
+                R.mipmap.ic_clock,
+                R.mipmap.ic_clock,
+                R.mipmap.ic_clock
+            };
+
+            /*List<String> menuPrincipal = new ArrayList<String>();
+            menuPrincipal.add("Começar");
+            menuPrincipal.add("Favoritos");
+            menuPrincipal.add("Enviar Questão");
+            menuPrincipal.add("Estatísticas"); */
+
             View rootView = inflater.inflate(R.layout.principal_fragment, container, false);
+
+            CustomAdapter adapter = new CustomAdapter(getActivity(), itemName, imgId);
+            menuPrincipal = (ListView) rootView.findViewById(R.id.main_list_view);
+            menuPrincipal.setAdapter(adapter);
+
+            menuPrincipal.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                {
+                    String selectedItem = itemName[+position];
+                    Toast.makeText(PrincipalActivity.this, selectedItem, Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            /*ArrayAdapter<String> adapter = new ArrayAdapter<String>
+            (
+                    this.getActivity(),
+                    R.layout.main_item_list,
+                    menuPrincipal
+            );
+
+            ListView listView = (ListView) rootView.findViewById(R.id.main_list_view);
+            listView.setAdapter(adapter);*/
+
             return rootView;
         }
     }
