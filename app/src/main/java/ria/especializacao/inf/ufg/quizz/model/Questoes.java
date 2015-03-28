@@ -33,8 +33,6 @@ public class Questoes {
         this.resposta = resposta;
     }
 
-
-
     public String getCategoria() {
         return categoria;
     }

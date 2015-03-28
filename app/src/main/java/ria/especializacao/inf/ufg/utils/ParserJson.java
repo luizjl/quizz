@@ -1,5 +1,7 @@
 package ria.especializacao.inf.ufg.utils;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.util.JsonReader;
 import android.util.JsonToken;
 
@@ -15,9 +17,10 @@ import ria.especializacao.inf.ufg.quizz.model.Questoes;
 /**
  * Created by danillo on 28/03/2015.
  */
-public class PaserJson {
+public class ParserJson {
 
     //Lendo Arquivo JSon
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public List<Questoes> readJsonStream(InputStream in) throws IOException {
         JsonReader reader = new JsonReader(new InputStreamReader(in, "UTF-8"));
         try {
@@ -28,6 +31,7 @@ public class PaserJson {
     }
 
     //Mapeia objeto JSon para Lista
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public List<Questoes> readMessagesArray(JsonReader reader) throws IOException {
         List<Questoes> messages = new ArrayList<Questoes>();
 
