@@ -43,10 +43,10 @@ public class PaserJson {
     public Questoes readMessage(JsonReader reader) throws IOException {
         int id = 0;
         int ano = 0;
-        String cargo = null;
-        String instituicao = null;
-        String orgao = null;
-        String cabecalho = null;
+        String cargo = "";
+        String instituicao = "";
+        String orgao = "";
+        String cabecalho = "";
         List<String> alternativas = null;
         int resposta = 0;
         String categoria = null;
