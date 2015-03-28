@@ -9,7 +9,11 @@ public class Questoes {
 
     public Questoes() {
 
-        
+    }
+
+    public Questoes(String nome, String teste) {
+        this.nome = nome;
+        this.teste = teste;
     }
 }
 
