@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CategoriasActivity"
+            android:label="@string/title_activity_categorias"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ria.especializacao.inf.ufg.br.quizz.PrincipalActivity" />
+        </activity>
     </application>
 
 </manifest>
