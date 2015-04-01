@@ -17,8 +17,8 @@ public class QuizBD extends SQLiteOpenHelper {
     /**
      * Queries
      * */
-    private static final String DATABASE_CREATE_ESTATISTICA =
-            "CREATE TABLE  if not exists estatistica(" +
+    private static final String DATABASE_CREATE_SESSAO =
+            "CREATE TABLE  if not exists sessao (" +
                     "_id integer PRIMARY KEY," +
                     "data text not null," +
                     "horaInicial text not null," +
@@ -34,12 +34,13 @@ public class QuizBD extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(DATABASE_CREATE_ESTATISTICA);
+        db.execSQL(DATABASE_CREATE_SESSAO);
+        //db.execSQL("insert into "+DATABASE_NAME+".sessao(data,horaInicial,horaFinal,qtdAcertos,qtdQuestoes) values('31/03/2015','21:30:00','21:35:00',6,10)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_CREATE_ESTATISTICA);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_CREATE_SESSAO);
         onCreate(db);
     }
 }
