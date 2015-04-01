@@ -17,28 +17,33 @@ import ria.especializacao.inf.ufg.quizz.model.Sessao;
  */
 public class SessaoDAO {
 
-    private SQLiteDatabase bd;
+    private  SQLiteDatabase bd;
+    private  QuizBD quizBD;
+    private Context contexto;
 
     //criando conexao com banco de dados
     public SessaoDAO( Context contexto ){
-        QuizBD quizBD = new QuizBD(contexto);
-        bd =  quizBD.getWritableDatabase();
+        this.contexto = contexto;
+        quizBD = new QuizBD(this.contexto);
     }
 
-    public void inserir( Sessao sessao ){
+    public long inserir( Sessao sessao ){
+        bd =  quizBD.getWritableDatabase();
         ContentValues valores =  new ContentValues();
         valores.put("data",sessao.getData());
         valores.put("horaInicial",sessao.getHoraInicial());
         valores.put("horaFinal",sessao.getHoraFinal());
         valores.put("qtdAcertos",sessao.getQtdAcertos());
         valores.put("qtdQuestoes",sessao.getQtdQuestoes());
-        bd.insert("sessao",null,valores);
+        return  bd.insert("sessao",null,valores);
     }
 
     public List<Sessao> getSessoes(){
+
+        bd = quizBD.getReadableDatabase();
+
         List<Sessao> listaSessao = new ArrayList<Sessao>();
         String[] colunas  = {"data","horaInicial","horaFinal","qtdAcertos","qtdQuestoes"};
-
 
         Cursor cursor = bd.query("sessao",colunas,null,null,null,null,null);
 
@@ -57,9 +62,9 @@ public class SessaoDAO {
             }while (cursor.moveToNext());
         }
 
-
         return listaSessao;
     }
+
 
 
 }
