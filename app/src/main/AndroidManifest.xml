@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ria.especializacao.inf.ufg.br.quizz" >
+    package="ria.especializacao.inf.ufg.quiz" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -19,14 +19,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CategoriasActivity"
-            android:label="@string/title_activity_categorias"
-            android:parentActivityName="ria.especializacao.inf.ufg.quiz.PrincipalActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
-        </activity>
-        <activity
             android:name="ria.especializacao.inf.ufg.quiz.CategoriaActivity"
             android:label="@string/title_activity_categoria"
             android:parentActivityName="ria.especializacao.inf.ufg.quiz.PrincipalActivity" >
@@ -40,15 +32,15 @@
             android:parentActivityName=".PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.br.quizz.PrincipalActivity" />
+                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
         </activity>
         <activity
             android:name="ria.especializacao.inf.ufg.quiz.QuestaoActivity"
             android:label="@string/title_activity_questao"
-            android:parentActivityName="ria.especializacao.inf.ufg.br.quiz.PrincipalActivity" >
+            android:parentActivityName="ria.especializacao.inf.ufg.quiz.PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.br.quiz.PrincipalActivity" />
+                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
         </activity>
     </application>
 
