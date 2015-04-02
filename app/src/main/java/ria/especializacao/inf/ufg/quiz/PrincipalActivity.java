@@ -35,7 +35,6 @@ public class PrincipalActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-
         QuizService service = new QuizService();
         service.execute();
 

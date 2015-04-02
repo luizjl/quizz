@@ -118,6 +118,7 @@ public class EstatisticaActivity extends ActionBarActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                     {
                         Intent intent = new Intent(getActivity(), DesempenhoActivity.class);
+                        Log.v("Estatistica","Passei aqui na Estatistica");
                         DesempenhoActivity.dados = new Object[9];
                         DesempenhoActivity.dados[0] = lista.get(position).getData();
                         DesempenhoActivity.dados[1] = lista.get(position).getHoraInicial();
