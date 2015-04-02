@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ria.especializacao.inf.br.fragment.QuestaoFragment;
-import ria.especializacao.inf.ufg.br.quizz.R;
+import ria.especializacao.inf.ufg.quiz.R;
 
 public class QuestaoActivity extends ActionBarActivity
 {
