@@ -10,15 +10,16 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class QuizBD extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "Quiz";
-    private static final int DATABASE_VERSION = 1;
+    private static final String DATATABLE_NAME = "sessao";
+    private static final int DATABASE_VERSION = 2;
 
 
 
     /**
      * Queries
      * */
-    private static final String DATABASE_CREATE_ESTATISTICA =
-            "CREATE TABLE  if not exists estatistica(" +
+    private static final String DATABASE_CREATE_SESSAO =
+            "CREATE TABLE  if not exists "+DATATABLE_NAME+"("+
                     "_id integer PRIMARY KEY," +
                     "data text not null," +
                     "horaInicial text not null," +
@@ -34,12 +35,12 @@ public class QuizBD extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(DATABASE_CREATE_ESTATISTICA);
+        db.execSQL(DATABASE_CREATE_SESSAO);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_CREATE_ESTATISTICA);
+        db.execSQL("DROP TABLE IF EXISTS " + DATATABLE_NAME);
         onCreate(db);
     }
 }

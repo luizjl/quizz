@@ -34,6 +34,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
         </activity>
+        <activity
+            android:name=".EstatisticaActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ria.especializacao.inf.ufg.br.quizz.PrincipalActivity" />
+        </activity>
     </application>
 
 </manifest>
