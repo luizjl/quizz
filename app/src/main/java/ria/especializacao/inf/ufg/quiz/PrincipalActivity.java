@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.br.quiz;
+package ria.especializacao.inf.ufg.quiz;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -28,7 +28,12 @@ public class PrincipalActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.principal_activity);
-        if (savedInstanceState == null) {
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("ConQuiz");
+
+        if (savedInstanceState == null)
+        {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
@@ -36,7 +41,6 @@ public class PrincipalActivity extends ActionBarActivity {
 
         QuizService service = new QuizService();
         service.execute();
-
     }
 
 

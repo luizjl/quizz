@@ -11,25 +11,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-import ria.especializacao.inf.ufg.fragment.CategoriaFragment;
 import ria.especializacao.inf.ufg.br.quizz.R;
+import ria.especializacao.inf.ufg.fragment.QuestaoFragment;
 
-public class CategoriaActivity extends ActionBarActivity
+public class QuestaoActivity extends ActionBarActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categoria);
-
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Categorias");
+        setContentView(R.layout.activity_questao);
 
         if (savedInstanceState == null)
         {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new CategoriaFragment())
+                    .add(R.id.container, new QuestaoFragment())
                     .commit();
         }
     }
@@ -39,7 +36,7 @@ public class CategoriaActivity extends ActionBarActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_categoria, menu);
+        getMenuInflater().inflate(R.menu.menu_questao, menu);
         return true;
     }
 

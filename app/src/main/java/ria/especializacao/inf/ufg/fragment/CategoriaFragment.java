@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,7 +34,6 @@ import ria.especializacao.inf.ufg.br.quizz.R;
 /**
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.
  */
-
 public class CategoriaFragment extends android.support.v4.app.Fragment
 {
     private ArrayAdapter<String> categoriaAdapter;
@@ -90,7 +90,7 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
-
+                Toast.makeText(getActivity(), "Você Clicou Em " + categoriaAdapter.getItemId(position), Toast.LENGTH_SHORT).show();
             }
         });
 

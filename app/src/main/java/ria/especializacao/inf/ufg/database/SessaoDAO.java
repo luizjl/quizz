@@ -10,7 +10,7 @@ import android.net.Uri;
 import java.util.ArrayList;
 import java.util.List;
 
-import ria.especializacao.inf.ufg.quizz.model.Sessao;
+import ria.especializacao.inf.ufg.model.Sessao;
 
 /**
  * Created by danillo on 31/03/2015.

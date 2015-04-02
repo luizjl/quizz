@@ -26,7 +26,7 @@ import java.util.List;
 
 import ria.especializacao.inf.ufg.database.QuizBD;
 import ria.especializacao.inf.ufg.database.SessaoDAO;
-import ria.especializacao.inf.ufg.quizz.model.Sessao;
+import ria.especializacao.inf.ufg.model.Sessao;
 
 
 public class EstatisticaActivity extends ActionBarActivity {
@@ -88,13 +88,13 @@ public class EstatisticaActivity extends ActionBarActivity {
 
             SessaoDAO sessaoDAO = new SessaoDAO(getActivity());
 
-            List<Sessao> lista = sessaoDAO.getSessoes();
+            /*List<Sessao> lista = sessaoDAO.getSessoes();
 
             strListView = new String[lista.size()];
 
             for (int i = 0; i < lista.size(); i++){
                 strListView[i] = lista.get(i).getData()+" "+lista.get(i).getHoraInicial()+" "+lista.get(i).getHoraFinal();
-            }
+            }*/
 
             mainListViewEstatistica = (ListView) rootView.findViewById(R.id.mainListViewEstatistica);
 
