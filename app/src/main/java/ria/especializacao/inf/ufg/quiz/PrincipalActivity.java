@@ -1,12 +1,10 @@
-package ria.especializacao.inf.ufg.br.quizz;
+package ria.especializacao.inf.ufg.br.quiz;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +17,9 @@ import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import ria.especializacao.inf.ufg.br.quizz.R;
 import ria.especializacao.inf.ufg.httpconnection.QuizService;
+import ria.especializacao.inf.ufg.quiz.CategoriaActivity;
 
 
 public class PrincipalActivity extends ActionBarActivity {
@@ -96,7 +96,7 @@ public class PrincipalActivity extends ActionBarActivity {
                     switch (strListView[position])
                     {
                         case "Começar":
-                            Intent intent = new Intent(getActivity(), CategoriasActivity.class);
+                            Intent intent = new Intent(getActivity(), CategoriaActivity.class);
                             startActivity(intent);
                             //Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
