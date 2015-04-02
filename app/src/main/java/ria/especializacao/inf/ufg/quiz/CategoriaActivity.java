@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 import ria.especializacao.inf.ufg.fragment.CategoriaFragment;
-import ria.especializacao.inf.ufg.br.quizz.R;
+import ria.especializacao.inf.ufg.quiz.R;
 
 public class CategoriaActivity extends ActionBarActivity
 {

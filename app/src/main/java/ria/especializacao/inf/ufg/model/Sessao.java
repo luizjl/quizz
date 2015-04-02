@@ -10,16 +10,56 @@ public class Sessao {
     private String horaFinal;
     private int qtdAcertos;
     private int qtdQuestoes;
+    private int acertosEngSoftware;
+    private int acertosDesenvolvimento;
+    private int acertosRedes;
+    private int acertosGovernanca;
 
     public Sessao() {
     }
 
-    public Sessao(String data, String horaInicial, String horaFinal, int qtdAcertos, int qtdQuestoes) {
+    public Sessao(String data, String horaInicial, String horaFinal, int qtdAcertos, int qtdQuestoes, int acertosEngSoftware, int acertosDesenvolvimento, int acertosRedes, int acertosGovernanca) {
         this.data = data;
         this.horaInicial = horaInicial;
         this.horaFinal = horaFinal;
         this.qtdAcertos = qtdAcertos;
         this.qtdQuestoes = qtdQuestoes;
+        this.acertosEngSoftware = acertosEngSoftware;
+        this.acertosDesenvolvimento = acertosDesenvolvimento;
+        this.acertosRedes = acertosRedes;
+        this.acertosGovernanca = acertosGovernanca;
+    }
+
+    public int getAcertosDesenvolvimento() {
+        return acertosDesenvolvimento;
+    }
+
+    public void setAcertosDesenvolvimento(int acertosDesenvolvimento) {
+        this.acertosDesenvolvimento = acertosDesenvolvimento;
+    }
+
+    public int getAcertosEngSoftware() {
+        return acertosEngSoftware;
+    }
+
+    public void setAcertosEngSoftware(int acertosEngSoftware) {
+        this.acertosEngSoftware = acertosEngSoftware;
+    }
+
+    public int getAcertosRedes() {
+        return acertosRedes;
+    }
+
+    public void setAcertosRedes(int acertosRedes) {
+        this.acertosRedes = acertosRedes;
+    }
+
+    public int getAcertosGovernanca() {
+        return acertosGovernanca;
+    }
+
+    public void setAcertosGovernanca(int acertosGovernanca) {
+        this.acertosGovernanca = acertosGovernanca;
     }
 
     public String getData() {

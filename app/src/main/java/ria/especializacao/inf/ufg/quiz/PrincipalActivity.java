@@ -17,7 +17,9 @@ import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import ria.especializacao.inf.ufg.br.quizz.R;
+import ria.especializacao.inf.ufg.database.SessaoDAO;
+import ria.especializacao.inf.ufg.model.Sessao;
+import ria.especializacao.inf.ufg.quiz.R;
 import ria.especializacao.inf.ufg.httpconnection.QuizService;
 import ria.especializacao.inf.ufg.quiz.CategoriaActivity;
 
@@ -38,7 +40,6 @@ public class PrincipalActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-
         QuizService service = new QuizService();
         service.execute();
     }
@@ -110,8 +111,10 @@ public class PrincipalActivity extends ActionBarActivity {
                         case "Enviar Questão":
                             Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
-                        case "Estatísticas":
-                            Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
+                        case "Desempenho":
+                            intent = new Intent(getActivity(), EstatisticaActivity.class);
+                            startActivity(intent);
+                            //Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }

@@ -4,10 +4,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="ria.especializacao.inf.ufg.br.quizz.EstatisticaActivity$PlaceholderFragment">
+    tools:context="ria.especializacao.inf.ufg.quiz.EstatisticaActivity$PlaceholderFragment">
 
     <ListView
         android:id="@+id/mainListViewEstatistica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/msgText"
+        android:text="Não há dados cadastrados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

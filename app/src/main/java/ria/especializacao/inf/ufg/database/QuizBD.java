@@ -11,7 +11,7 @@ public class QuizBD extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "Quiz";
     private static final String DATATABLE_NAME = "sessao";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
 
 
@@ -25,7 +25,11 @@ public class QuizBD extends SQLiteOpenHelper {
                     "horaInicial text not null," +
                     "horaFinal text not null," +
                     "qtdAcertos integer," +
-                    "qtdQuestoes integer)";
+                    "qtdQuestoes integer," +
+                    "acertosEngSoftware integer," +
+                    "acertosDesenvolvimento integer," +
+                    "acertosRedes integer," +
+                    "acertosGovernanca integer)";
 
 
 

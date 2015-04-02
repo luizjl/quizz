@@ -35,6 +35,10 @@ public class SessaoDAO {
         valores.put("horaFinal",sessao.getHoraFinal());
         valores.put("qtdAcertos",sessao.getQtdAcertos());
         valores.put("qtdQuestoes",sessao.getQtdQuestoes());
+        valores.put("acertosEngSoftware",sessao.getAcertosEngSoftware());
+        valores.put("acertosDesenvolvimento",sessao.getAcertosDesenvolvimento());
+        valores.put("acertosRedes",sessao.getAcertosRedes());
+        valores.put("acertosGovernanca",sessao.getAcertosGovernanca());
         return  bd.insert("sessao",null,valores);
     }
 
@@ -43,9 +47,14 @@ public class SessaoDAO {
         bd = quizBD.getReadableDatabase();
 
         List<Sessao> listaSessao = new ArrayList<Sessao>();
-        String[] colunas  = {"data","horaInicial","horaFinal","qtdAcertos","qtdQuestoes"};
 
-        Cursor cursor = bd.query("sessao",colunas,null,null,null,null,null);
+        String[] colunas  = {"data","horaInicial","horaFinal","qtdAcertos","qtdQuestoes"
+        ,"acertosEngSoftware","acertosDesenvolvimento","acertosRedes","acertosGovernanca"};
+
+        String order = "data,horaInicial desc";
+
+        Cursor cursor = bd.query("sessao",colunas,null,null,null,null,order);
+
 
         if ( cursor.getCount() > 0){
             cursor.moveToFirst();
@@ -57,6 +66,10 @@ public class SessaoDAO {
                 sessao.setHoraFinal(cursor.getString(2));
                 sessao.setQtdAcertos(cursor.getInt(3));
                 sessao.setQtdQuestoes(cursor.getInt(4));
+                sessao.setAcertosEngSoftware(cursor.getInt(5));
+                sessao.setAcertosDesenvolvimento(cursor.getInt(6));
+                sessao.setAcertosRedes(cursor.getInt(7));
+                sessao.setAcertosGovernanca(cursor.getInt(8));
                 listaSessao.add(sessao);
 
             }while (cursor.moveToNext());

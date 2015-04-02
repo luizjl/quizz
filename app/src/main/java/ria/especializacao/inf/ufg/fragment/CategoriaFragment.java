@@ -29,7 +29,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import ria.especializacao.inf.ufg.br.quizz.R;
+import ria.especializacao.inf.ufg.quiz.R;
 
 /**
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.
