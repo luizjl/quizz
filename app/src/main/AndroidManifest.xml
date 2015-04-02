@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="ria.especializacao.inf.ufg.quiz.PrincipalActivity"
+            android:name="ria.especializacao.inf.br.quiz.PrincipalActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,28 +18,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ria.especializacao.inf.ufg.quiz.CategoriaActivity"
+            android:name="ria.especializacao.inf.br.quiz.CategoriaActivity"
             android:label="@string/title_activity_categoria"
-            android:parentActivityName="ria.especializacao.inf.ufg.quiz.PrincipalActivity" >
+            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
+                android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name=".EstatisticaActivity"
+            android:name="ria.especializacao.inf.br.quiz.EstatisticaActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".PrincipalActivity" >
+            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
+                android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name="ria.especializacao.inf.ufg.quiz.QuestaoActivity"
+            android:name="ria.especializacao.inf.br.quiz.QuestaoActivity"
             android:label="@string/title_activity_questao"
-            android:parentActivityName="ria.especializacao.inf.ufg.quiz.PrincipalActivity" >
+            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.ufg.quiz.PrincipalActivity" />
+                android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
     </application>
 
