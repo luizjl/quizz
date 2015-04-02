@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.utils;
+package ria.especializacao.inf.br.utils;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import ria.especializacao.inf.ufg.model.Questoes;
+import ria.especializacao.inf.br.model.Questoes;
 
 /**
  * Created by danillo on 28/03/2015.

@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.fragment;
+package ria.especializacao.inf.br.fragment;
 
 import android.app.Activity;
 import android.net.Uri;

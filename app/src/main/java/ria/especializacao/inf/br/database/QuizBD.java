@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.database;
+package ria.especializacao.inf.br.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

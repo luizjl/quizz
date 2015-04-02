@@ -1,16 +1,14 @@
-package ria.especializacao.inf.ufg.database;
+package ria.especializacao.inf.br.database;
 
-import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ria.especializacao.inf.ufg.model.Sessao;
+import ria.especializacao.inf.br.model.Sessao;
 
 /**
  * Created by danillo on 31/03/2015.

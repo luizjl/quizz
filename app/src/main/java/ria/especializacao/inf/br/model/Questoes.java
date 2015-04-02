@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.model;
+package ria.especializacao.inf.br.model;
 
 import java.util.List;
 

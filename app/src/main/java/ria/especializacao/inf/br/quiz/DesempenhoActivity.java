@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.quiz;
+package ria.especializacao.inf.br.quiz;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;

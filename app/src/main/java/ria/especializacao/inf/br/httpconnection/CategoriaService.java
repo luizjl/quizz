@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.httpconnection;
+package ria.especializacao.inf.br.httpconnection;
 
 import android.os.AsyncTask;
 import android.util.Log;

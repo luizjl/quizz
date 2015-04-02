@@ -1,8 +1,7 @@
-package ria.especializacao.inf.ufg.quiz;
+package ria.especializacao.inf.br.quiz;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,18 +9,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.Toast;
 
-import ria.especializacao.inf.ufg.database.SessaoDAO;
-import ria.especializacao.inf.ufg.model.Sessao;
 import ria.especializacao.inf.ufg.quiz.R;
-import ria.especializacao.inf.ufg.httpconnection.QuizService;
-import ria.especializacao.inf.ufg.quiz.CategoriaActivity;
+import ria.especializacao.inf.br.httpconnection.QuizService;
 
 
 public class PrincipalActivity extends ActionBarActivity {
