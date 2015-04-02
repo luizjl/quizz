@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Quizz</string>
+    <string name="app_name">ConQuiz</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_categorias">CategoriasActivity</string>
-    <string name="title_activity_categoria">CategoriaActivity</string>
+    <string name="title_activity_categoria">Categorias</string>
+    <string name="title_activity_questao">Questão</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
