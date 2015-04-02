@@ -17,8 +17,8 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "ria.especializacao.inf.ufg.br.quizz"
-        minSdkVersion 10
+        applicationId "ria.especializacao.inf.ufg.br.quiz"
+        minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"

@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.br.quizz;
+package ria.especializacao.inf.ufg.quiz;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -11,16 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+import ria.especializacao.inf.ufg.fragment.CategoriaFragment;
+import ria.especializacao.inf.ufg.br.quizz.R;
 
-public class CategoriasActivity extends ActionBarActivity {
+public class CategoriaActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categorias);
+        setContentView(R.layout.activity_categoria);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new CategoriaFragment())
                     .commit();
         }
     }
@@ -29,7 +31,7 @@ public class CategoriasActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_categorias, menu);
+        getMenuInflater().inflate(R.menu.menu_categoria, menu);
         return true;
     }
 
@@ -59,7 +61,7 @@ public class CategoriasActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_categorias, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_categoria, container, false);
             return rootView;
         }
     }

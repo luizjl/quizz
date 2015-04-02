@@ -1317,10 +1317,11 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_settings=0x7f0a0041;
+        public static final int action_settings=0x7f0a0042;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0016;
         public static final int beginning=0x7f0a0013;
+        public static final int categoriaListView=0x7f0a0040;
         public static final int checkbox=0x7f0a0029;
         public static final int collapseActionView=0x7f0a0017;
         public static final int container=0x7f0a003f;
@@ -1340,7 +1341,7 @@ containing a value of this type.
         public static final int image=0x7f0a0023;
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a0025;
-        public static final int mainListView=0x7f0a0040;
+        public static final int mainListView=0x7f0a0041;
         public static final int middle=0x7f0a0015;
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
@@ -1398,15 +1399,16 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f040014;
         public static final int abc_search_view=0x7f040015;
         public static final int abc_simple_dropdown_hint=0x7f040016;
-        public static final int activity_categorias=0x7f040017;
-        public static final int fragment_categorias=0x7f040018;
+        public static final int activity_categoria=0x7f040017;
+        public static final int fragment_categoria=0x7f040018;
         public static final int principal_activity=0x7f040019;
         public static final int principal_fragment=0x7f04001a;
         public static final int support_simple_spinner_dropdown_item=0x7f04001b;
     }
     public static final class menu {
-        public static final int menu_categorias=0x7f0e0000;
-        public static final int menu_principal=0x7f0e0001;
+        public static final int menu_categoria=0x7f0e0000;
+        public static final int menu_categorias=0x7f0e0001;
+        public static final int menu_principal=0x7f0e0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1430,8 +1432,10 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0c000f;
         public static final int action_settings=0x7f0c0010;
         public static final int app_name=0x7f0c0011;
-        public static final int hello_world=0x7f0c0012;
-        public static final int title_activity_categorias=0x7f0c0013;
+        public static final int hello_blank_fragment=0x7f0c0012;
+        public static final int hello_world=0x7f0c0013;
+        public static final int title_activity_categoria=0x7f0c0014;
+        public static final int title_activity_categorias=0x7f0c0015;
     }
     public static final class style {
         /**  Customize your theme here. 
@@ -1680,33 +1684,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background ria.especializacao.inf.ufg.br.quizz:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit ria.especializacao.inf.ufg.br.quizz:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked ria.especializacao.inf.ufg.br.quizz:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd ria.especializacao.inf.ufg.br.quizz:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft ria.especializacao.inf.ufg.br.quizz:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight ria.especializacao.inf.ufg.br.quizz:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart ria.especializacao.inf.ufg.br.quizz:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout ria.especializacao.inf.ufg.br.quizz:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions ria.especializacao.inf.ufg.br.quizz:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider ria.especializacao.inf.ufg.br.quizz:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation ria.especializacao.inf.ufg.br.quizz:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height ria.especializacao.inf.ufg.br.quizz:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll ria.especializacao.inf.ufg.br.quizz:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ria.especializacao.inf.ufg.br.quizz:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout ria.especializacao.inf.ufg.br.quizz:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon ria.especializacao.inf.ufg.br.quizz:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ria.especializacao.inf.ufg.br.quizz:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding ria.especializacao.inf.ufg.br.quizz:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo ria.especializacao.inf.ufg.br.quizz:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode ria.especializacao.inf.ufg.br.quizz:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme ria.especializacao.inf.ufg.br.quizz:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding ria.especializacao.inf.ufg.br.quizz:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle ria.especializacao.inf.ufg.br.quizz:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle ria.especializacao.inf.ufg.br.quizz:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle ria.especializacao.inf.ufg.br.quizz:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title ria.especializacao.inf.ufg.br.quizz:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle ria.especializacao.inf.ufg.br.quizz:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background ria.especializacao.inf.ufg.br.quiz:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit ria.especializacao.inf.ufg.br.quiz:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked ria.especializacao.inf.ufg.br.quiz:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd ria.especializacao.inf.ufg.br.quiz:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft ria.especializacao.inf.ufg.br.quiz:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight ria.especializacao.inf.ufg.br.quiz:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart ria.especializacao.inf.ufg.br.quiz:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout ria.especializacao.inf.ufg.br.quiz:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions ria.especializacao.inf.ufg.br.quiz:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider ria.especializacao.inf.ufg.br.quiz:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation ria.especializacao.inf.ufg.br.quiz:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height ria.especializacao.inf.ufg.br.quiz:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll ria.especializacao.inf.ufg.br.quiz:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ria.especializacao.inf.ufg.br.quiz:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout ria.especializacao.inf.ufg.br.quiz:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon ria.especializacao.inf.ufg.br.quiz:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ria.especializacao.inf.ufg.br.quiz:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding ria.especializacao.inf.ufg.br.quiz:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo ria.especializacao.inf.ufg.br.quiz:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode ria.especializacao.inf.ufg.br.quiz:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme ria.especializacao.inf.ufg.br.quiz:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding ria.especializacao.inf.ufg.br.quiz:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle ria.especializacao.inf.ufg.br.quiz:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle ria.especializacao.inf.ufg.br.quiz:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle ria.especializacao.inf.ufg.br.quiz:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title ria.especializacao.inf.ufg.br.quiz:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle ria.especializacao.inf.ufg.br.quiz:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1746,17 +1750,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010071
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#background}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:background
+          @attr name ria.especializacao.inf.ufg.br.quiz:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1764,11 +1768,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:backgroundSplit
+          @attr name ria.especializacao.inf.ufg.br.quiz:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1776,11 +1780,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:backgroundStacked
+          @attr name ria.especializacao.inf.ufg.br.quiz:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1792,11 +1796,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetEnd
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1808,11 +1812,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetLeft
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1824,11 +1828,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetRight
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1840,21 +1844,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetStart
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:customNavigationLayout
+          @attr name ria.especializacao.inf.ufg.br.quiz:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1872,21 +1876,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:displayOptions
+          @attr name ria.especializacao.inf.ufg.br.quiz:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#divider}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:divider
+          @attr name ria.especializacao.inf.ufg.br.quiz:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1898,11 +1902,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:elevation
+          @attr name ria.especializacao.inf.ufg.br.quiz:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#height}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1914,11 +1918,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:height
+          @attr name ria.especializacao.inf.ufg.br.quiz:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1928,51 +1932,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:hideOnContentScroll
+          @attr name ria.especializacao.inf.ufg.br.quiz:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:homeAsUpIndicator
+          @attr name ria.especializacao.inf.ufg.br.quiz:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:homeLayout
+          @attr name ria.especializacao.inf.ufg.br.quiz:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#icon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:icon
+          @attr name ria.especializacao.inf.ufg.br.quiz:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:indeterminateProgressStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1984,21 +1988,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:itemPadding
+          @attr name ria.especializacao.inf.ufg.br.quiz:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#logo}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:logo
+          @attr name ria.especializacao.inf.ufg.br.quiz:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2012,21 +2016,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:navigationMode
+          @attr name ria.especializacao.inf.ufg.br.quiz:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:popupTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2038,21 +2042,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:progressBarPadding
+          @attr name ria.especializacao.inf.ufg.br.quiz:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:progressBarStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2062,21 +2066,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:subtitle
+          @attr name ria.especializacao.inf.ufg.br.quiz:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:subtitleTextStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#title}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2086,17 +2090,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:title
+          @attr name ria.especializacao.inf.ufg.br.quiz:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleTextStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2148,12 +2152,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background ria.especializacao.inf.ufg.br.quizz:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit ria.especializacao.inf.ufg.br.quizz:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout ria.especializacao.inf.ufg.br.quizz:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height ria.especializacao.inf.ufg.br.quizz:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle ria.especializacao.inf.ufg.br.quizz:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle ria.especializacao.inf.ufg.br.quizz:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background ria.especializacao.inf.ufg.br.quiz:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit ria.especializacao.inf.ufg.br.quiz:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout ria.especializacao.inf.ufg.br.quiz:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height ria.especializacao.inf.ufg.br.quiz:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle ria.especializacao.inf.ufg.br.quiz:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle ria.especializacao.inf.ufg.br.quiz:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2167,17 +2171,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#background}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:background
+          @attr name ria.especializacao.inf.ufg.br.quiz:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2185,21 +2189,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:backgroundSplit
+          @attr name ria.especializacao.inf.ufg.br.quiz:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:closeItemLayout
+          @attr name ria.especializacao.inf.ufg.br.quiz:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#height}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2211,27 +2215,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:height
+          @attr name ria.especializacao.inf.ufg.br.quiz:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:subtitleTextStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleTextStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2240,8 +2244,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ria.especializacao.inf.ufg.br.quizz:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ria.especializacao.inf.ufg.br.quizz:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ria.especializacao.inf.ufg.br.quiz:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ria.especializacao.inf.ufg.br.quiz:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2250,17 +2254,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:expandActivityOverflowButtonDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2270,7 +2274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:initialActivityCount
+          @attr name ria.especializacao.inf.ufg.br.quiz:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2279,7 +2283,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps ria.especializacao.inf.ufg.br.quizz:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps ria.especializacao.inf.ufg.br.quiz:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2287,14 +2291,14 @@ containing a value of this type.
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAllCaps
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -2303,14 +2307,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize ria.especializacao.inf.ufg.br.quizz:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color ria.especializacao.inf.ufg.br.quizz:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ria.especializacao.inf.ufg.br.quizz:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ria.especializacao.inf.ufg.br.quizz:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize ria.especializacao.inf.ufg.br.quizz:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars ria.especializacao.inf.ufg.br.quizz:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness ria.especializacao.inf.ufg.br.quizz:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize ria.especializacao.inf.ufg.br.quizz:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize ria.especializacao.inf.ufg.br.quiz:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color ria.especializacao.inf.ufg.br.quiz:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ria.especializacao.inf.ufg.br.quiz:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ria.especializacao.inf.ufg.br.quiz:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize ria.especializacao.inf.ufg.br.quiz:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars ria.especializacao.inf.ufg.br.quiz:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness ria.especializacao.inf.ufg.br.quiz:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize ria.especializacao.inf.ufg.br.quiz:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -2326,7 +2330,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#barSize}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2338,11 +2342,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:barSize
+          @attr name ria.especializacao.inf.ufg.br.quiz:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#color}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2353,11 +2357,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:color
+          @attr name ria.especializacao.inf.ufg.br.quiz:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2369,11 +2373,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:drawableSize
+          @attr name ria.especializacao.inf.ufg.br.quiz:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2385,11 +2389,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:gapBetweenBars
+          @attr name ria.especializacao.inf.ufg.br.quiz:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2401,11 +2405,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:middleBarArrowSize
+          @attr name ria.especializacao.inf.ufg.br.quiz:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2415,11 +2419,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:spinBars
+          @attr name ria.especializacao.inf.ufg.br.quiz:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#thickness}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2431,11 +2435,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:thickness
+          @attr name ria.especializacao.inf.ufg.br.quiz:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2447,7 +2451,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:topBottomBarArrowSize
+          @attr name ria.especializacao.inf.ufg.br.quiz:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -2461,10 +2465,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider ria.especializacao.inf.ufg.br.quizz:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ria.especializacao.inf.ufg.br.quizz:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ria.especializacao.inf.ufg.br.quizz:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers ria.especializacao.inf.ufg.br.quizz:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider ria.especializacao.inf.ufg.br.quiz:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ria.especializacao.inf.ufg.br.quiz:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ria.especializacao.inf.ufg.br.quiz:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers ria.especializacao.inf.ufg.br.quiz:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -2512,17 +2516,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#divider}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:divider
+          @attr name ria.especializacao.inf.ufg.br.quiz:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2534,11 +2538,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:dividerPadding
+          @attr name ria.especializacao.inf.ufg.br.quiz:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2548,11 +2552,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:measureWithLargestChild
+          @attr name ria.especializacao.inf.ufg.br.quiz:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2567,7 +2571,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:showDividers
+          @attr name ria.especializacao.inf.ufg.br.quiz:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -2706,9 +2710,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout ria.especializacao.inf.ufg.br.quizz:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass ria.especializacao.inf.ufg.br.quizz:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass ria.especializacao.inf.ufg.br.quizz:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout ria.especializacao.inf.ufg.br.quiz:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass ria.especializacao.inf.ufg.br.quiz:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass ria.especializacao.inf.ufg.br.quiz:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -2722,7 +2726,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction ria.especializacao.inf.ufg.br.quizz:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction ria.especializacao.inf.ufg.br.quiz:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2750,17 +2754,17 @@ containing a value of this type.
             0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionLayout
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2770,11 +2774,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionProviderClass
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2784,7 +2788,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionViewClass
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -2866,7 +2870,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2882,7 +2886,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:showAsAction
+          @attr name ria.especializacao.inf.ufg.br.quiz:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -2898,7 +2902,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing ria.especializacao.inf.ufg.br.quizz:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing ria.especializacao.inf.ufg.br.quiz:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -2956,7 +2960,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -2966,7 +2970,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:preserveIconSpacing
+          @attr name ria.especializacao.inf.ufg.br.quiz:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -2976,7 +2980,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor ria.especializacao.inf.ufg.br.quizz:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor ria.especializacao.inf.ufg.br.quiz:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -2991,7 +2995,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -3001,7 +3005,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:overlapAnchor
+          @attr name ria.especializacao.inf.ufg.br.quiz:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -3010,7 +3014,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ria.especializacao.inf.ufg.br.quizz:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ria.especializacao.inf.ufg.br.quiz:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -3018,7 +3022,7 @@ containing a value of this type.
             0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -3028,7 +3032,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:state_above_anchor
+          @attr name ria.especializacao.inf.ufg.br.quiz:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -3041,17 +3045,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon ria.especializacao.inf.ufg.br.quizz:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon ria.especializacao.inf.ufg.br.quizz:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon ria.especializacao.inf.ufg.br.quizz:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault ria.especializacao.inf.ufg.br.quizz:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout ria.especializacao.inf.ufg.br.quizz:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground ria.especializacao.inf.ufg.br.quizz:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint ria.especializacao.inf.ufg.br.quizz:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon ria.especializacao.inf.ufg.br.quizz:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground ria.especializacao.inf.ufg.br.quizz:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout ria.especializacao.inf.ufg.br.quizz:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon ria.especializacao.inf.ufg.br.quizz:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon ria.especializacao.inf.ufg.br.quiz:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon ria.especializacao.inf.ufg.br.quiz:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon ria.especializacao.inf.ufg.br.quiz:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault ria.especializacao.inf.ufg.br.quiz:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout ria.especializacao.inf.ufg.br.quiz:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground ria.especializacao.inf.ufg.br.quiz:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint ria.especializacao.inf.ufg.br.quiz:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon ria.especializacao.inf.ufg.br.quiz:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground ria.especializacao.inf.ufg.br.quiz:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout ria.especializacao.inf.ufg.br.quiz:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon ria.especializacao.inf.ufg.br.quiz:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -3100,37 +3104,37 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:closeIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:commitIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:goIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3140,31 +3144,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:iconifiedByDefault
+          @attr name ria.especializacao.inf.ufg.br.quiz:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#layout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:layout
+          @attr name ria.especializacao.inf.ufg.br.quiz:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:queryBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3174,47 +3178,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:queryHint
+          @attr name ria.especializacao.inf.ufg.br.quiz:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:searchIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:submitBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:suggestionRowLayout
+          @attr name ria.especializacao.inf.ufg.br.quiz:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:voiceIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
@@ -3230,10 +3234,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled ria.especializacao.inf.ufg.br.quizz:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView ria.especializacao.inf.ufg.br.quizz:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt ria.especializacao.inf.ufg.br.quizz:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode ria.especializacao.inf.ufg.br.quizz:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled ria.especializacao.inf.ufg.br.quiz:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView ria.especializacao.inf.ufg.br.quiz:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt ria.especializacao.inf.ufg.br.quiz:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode ria.especializacao.inf.ufg.br.quiz:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -3295,7 +3299,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3305,31 +3309,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:disableChildrenWhenDisabled
+          @attr name ria.especializacao.inf.ufg.br.quiz:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:popupPromptView
+          @attr name ria.especializacao.inf.ufg.br.quiz:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#prompt}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:prompt
+          @attr name ria.especializacao.inf.ufg.br.quiz:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3342,7 +3346,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:spinnerMode
+          @attr name ria.especializacao.inf.ufg.br.quiz:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -3354,13 +3358,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText ria.especializacao.inf.ufg.br.quizz:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack ria.especializacao.inf.ufg.br.quizz:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth ria.especializacao.inf.ufg.br.quizz:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding ria.especializacao.inf.ufg.br.quizz:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ria.especializacao.inf.ufg.br.quizz:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ria.especializacao.inf.ufg.br.quizz:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track ria.especializacao.inf.ufg.br.quizz:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText ria.especializacao.inf.ufg.br.quiz:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack ria.especializacao.inf.ufg.br.quiz:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth ria.especializacao.inf.ufg.br.quiz:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding ria.especializacao.inf.ufg.br.quiz:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ria.especializacao.inf.ufg.br.quiz:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ria.especializacao.inf.ufg.br.quiz:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track ria.especializacao.inf.ufg.br.quiz:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -3397,7 +3401,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#showText}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3407,11 +3411,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:showText
+          @attr name ria.especializacao.inf.ufg.br.quiz:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3421,11 +3425,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:splitTrack
+          @attr name ria.especializacao.inf.ufg.br.quiz:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3437,11 +3441,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:switchMinWidth
+          @attr name ria.especializacao.inf.ufg.br.quiz:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3453,21 +3457,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:switchPadding
+          @attr name ria.especializacao.inf.ufg.br.quiz:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:switchTextAppearance
+          @attr name ria.especializacao.inf.ufg.br.quiz:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3479,17 +3483,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:thumbTextPadding
+          @attr name ria.especializacao.inf.ufg.br.quiz:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#track}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:track
+          @attr name ria.especializacao.inf.ufg.br.quiz:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a Theme.
@@ -3498,89 +3502,89 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider ria.especializacao.inf.ufg.br.quizz:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground ria.especializacao.inf.ufg.br.quizz:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme ria.especializacao.inf.ufg.br.quizz:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize ria.especializacao.inf.ufg.br.quizz:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle ria.especializacao.inf.ufg.br.quizz:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle ria.especializacao.inf.ufg.br.quizz:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle ria.especializacao.inf.ufg.br.quizz:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle ria.especializacao.inf.ufg.br.quizz:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle ria.especializacao.inf.ufg.br.quizz:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme ria.especializacao.inf.ufg.br.quizz:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme ria.especializacao.inf.ufg.br.quizz:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle ria.especializacao.inf.ufg.br.quizz:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle ria.especializacao.inf.ufg.br.quizz:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance ria.especializacao.inf.ufg.br.quizz:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor ria.especializacao.inf.ufg.br.quizz:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground ria.especializacao.inf.ufg.br.quizz:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle ria.especializacao.inf.ufg.br.quizz:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable ria.especializacao.inf.ufg.br.quizz:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable ria.especializacao.inf.ufg.br.quizz:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable ria.especializacao.inf.ufg.br.quizz:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable ria.especializacao.inf.ufg.br.quizz:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable ria.especializacao.inf.ufg.br.quizz:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle ria.especializacao.inf.ufg.br.quizz:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable ria.especializacao.inf.ufg.br.quizz:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable ria.especializacao.inf.ufg.br.quizz:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground ria.especializacao.inf.ufg.br.quizz:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle ria.especializacao.inf.ufg.br.quizz:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable ria.especializacao.inf.ufg.br.quizz:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle ria.especializacao.inf.ufg.br.quizz:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle ria.especializacao.inf.ufg.br.quizz:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle ria.especializacao.inf.ufg.br.quizz:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider ria.especializacao.inf.ufg.br.quiz:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground ria.especializacao.inf.ufg.br.quiz:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme ria.especializacao.inf.ufg.br.quiz:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize ria.especializacao.inf.ufg.br.quiz:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle ria.especializacao.inf.ufg.br.quiz:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle ria.especializacao.inf.ufg.br.quiz:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle ria.especializacao.inf.ufg.br.quiz:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle ria.especializacao.inf.ufg.br.quiz:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle ria.especializacao.inf.ufg.br.quiz:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme ria.especializacao.inf.ufg.br.quiz:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme ria.especializacao.inf.ufg.br.quiz:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle ria.especializacao.inf.ufg.br.quiz:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle ria.especializacao.inf.ufg.br.quiz:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance ria.especializacao.inf.ufg.br.quiz:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor ria.especializacao.inf.ufg.br.quiz:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground ria.especializacao.inf.ufg.br.quiz:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle ria.especializacao.inf.ufg.br.quiz:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable ria.especializacao.inf.ufg.br.quiz:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable ria.especializacao.inf.ufg.br.quiz:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable ria.especializacao.inf.ufg.br.quiz:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable ria.especializacao.inf.ufg.br.quiz:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable ria.especializacao.inf.ufg.br.quiz:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle ria.especializacao.inf.ufg.br.quiz:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable ria.especializacao.inf.ufg.br.quiz:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable ria.especializacao.inf.ufg.br.quiz:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground ria.especializacao.inf.ufg.br.quiz:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle ria.especializacao.inf.ufg.br.quiz:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable ria.especializacao.inf.ufg.br.quiz:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle ria.especializacao.inf.ufg.br.quiz:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle ria.especializacao.inf.ufg.br.quiz:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle ria.especializacao.inf.ufg.br.quiz:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle ria.especializacao.inf.ufg.br.quizz:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle ria.especializacao.inf.ufg.br.quizz:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent ria.especializacao.inf.ufg.br.quizz:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal ria.especializacao.inf.ufg.br.quizz:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated ria.especializacao.inf.ufg.br.quizz:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight ria.especializacao.inf.ufg.br.quizz:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal ria.especializacao.inf.ufg.br.quizz:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary ria.especializacao.inf.ufg.br.quizz:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark ria.especializacao.inf.ufg.br.quizz:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal ria.especializacao.inf.ufg.br.quizz:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal ria.especializacao.inf.ufg.br.quizz:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical ria.especializacao.inf.ufg.br.quizz:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle ria.especializacao.inf.ufg.br.quizz:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ria.especializacao.inf.ufg.br.quizz:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground ria.especializacao.inf.ufg.br.quizz:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor ria.especializacao.inf.ufg.br.quizz:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator ria.especializacao.inf.ufg.br.quizz:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ria.especializacao.inf.ufg.br.quizz:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle ria.especializacao.inf.ufg.br.quizz:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft ria.especializacao.inf.ufg.br.quizz:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight ria.especializacao.inf.ufg.br.quizz:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground ria.especializacao.inf.ufg.br.quizz:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme ria.especializacao.inf.ufg.br.quizz:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth ria.especializacao.inf.ufg.br.quizz:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle ria.especializacao.inf.ufg.br.quizz:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle ria.especializacao.inf.ufg.br.quizz:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle ria.especializacao.inf.ufg.br.quizz:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground ria.especializacao.inf.ufg.br.quizz:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless ria.especializacao.inf.ufg.br.quizz:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle ria.especializacao.inf.ufg.br.quizz:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle ria.especializacao.inf.ufg.br.quizz:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle ria.especializacao.inf.ufg.br.quizz:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu ria.especializacao.inf.ufg.br.quizz:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem ria.especializacao.inf.ufg.br.quizz:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall ria.especializacao.inf.ufg.br.quizz:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle ria.especializacao.inf.ufg.br.quizz:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle ria.especializacao.inf.ufg.br.quizz:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu ria.especializacao.inf.ufg.br.quizz:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl ria.especializacao.inf.ufg.br.quizz:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle ria.especializacao.inf.ufg.br.quizz:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle ria.especializacao.inf.ufg.br.quizz:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar ria.especializacao.inf.ufg.br.quizz:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay ria.especializacao.inf.ufg.br.quizz:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay ria.especializacao.inf.ufg.br.quizz:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor ria.especializacao.inf.ufg.br.quizz:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor ria.especializacao.inf.ufg.br.quizz:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor ria.especializacao.inf.ufg.br.quizz:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor ria.especializacao.inf.ufg.br.quizz:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle ria.especializacao.inf.ufg.br.quiz:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle ria.especializacao.inf.ufg.br.quiz:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent ria.especializacao.inf.ufg.br.quiz:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal ria.especializacao.inf.ufg.br.quiz:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated ria.especializacao.inf.ufg.br.quiz:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight ria.especializacao.inf.ufg.br.quiz:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal ria.especializacao.inf.ufg.br.quiz:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary ria.especializacao.inf.ufg.br.quiz:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark ria.especializacao.inf.ufg.br.quiz:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal ria.especializacao.inf.ufg.br.quiz:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal ria.especializacao.inf.ufg.br.quiz:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical ria.especializacao.inf.ufg.br.quiz:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle ria.especializacao.inf.ufg.br.quiz:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ria.especializacao.inf.ufg.br.quiz:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground ria.especializacao.inf.ufg.br.quiz:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor ria.especializacao.inf.ufg.br.quiz:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator ria.especializacao.inf.ufg.br.quiz:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ria.especializacao.inf.ufg.br.quiz:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle ria.especializacao.inf.ufg.br.quiz:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft ria.especializacao.inf.ufg.br.quiz:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight ria.especializacao.inf.ufg.br.quiz:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground ria.especializacao.inf.ufg.br.quiz:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme ria.especializacao.inf.ufg.br.quiz:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth ria.especializacao.inf.ufg.br.quiz:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle ria.especializacao.inf.ufg.br.quiz:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle ria.especializacao.inf.ufg.br.quiz:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle ria.especializacao.inf.ufg.br.quiz:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground ria.especializacao.inf.ufg.br.quiz:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless ria.especializacao.inf.ufg.br.quiz:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle ria.especializacao.inf.ufg.br.quiz:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle ria.especializacao.inf.ufg.br.quiz:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle ria.especializacao.inf.ufg.br.quiz:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu ria.especializacao.inf.ufg.br.quiz:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem ria.especializacao.inf.ufg.br.quiz:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall ria.especializacao.inf.ufg.br.quiz:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle ria.especializacao.inf.ufg.br.quiz:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle ria.especializacao.inf.ufg.br.quiz:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu ria.especializacao.inf.ufg.br.quiz:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl ria.especializacao.inf.ufg.br.quiz:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle ria.especializacao.inf.ufg.br.quiz:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle ria.especializacao.inf.ufg.br.quiz:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar ria.especializacao.inf.ufg.br.quiz:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay ria.especializacao.inf.ufg.br.quiz:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay ria.especializacao.inf.ufg.br.quiz:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor ria.especializacao.inf.ufg.br.quiz:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor ria.especializacao.inf.ufg.br.quiz:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor ria.especializacao.inf.ufg.br.quiz:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor ria.especializacao.inf.ufg.br.quiz:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -3690,37 +3694,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010097, 0x7f010098, 0x7f010099
         };
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarDivider
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 19;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarItemBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 20;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarPopupTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 13;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3740,111 +3744,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarSize
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarSize
         */
         public static final int Theme_actionBarSize = 18;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarSplitStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarTabBarStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 9;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarTabStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarTabTextStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 10;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 16;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionBarWidgetTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionButtonStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 43;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionDropDownStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 38;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionMenuTextAppearance
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 21;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -3852,167 +3856,167 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionMenuTextColor
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 22;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 25;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeCloseButtonStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 24;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeCloseDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 27;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeCopyDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 29;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeCutDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 28;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeFindDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModePasteDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 30;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModePopupWindowStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 35;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeSelectAllDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeShareDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeSplitBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 23;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionModeWebSearchDrawable
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionOverflowButtonStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:actionOverflowMenuStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:activityChooserViewStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 50;
         /**
@@ -4022,27 +4026,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:buttonBarButtonStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:buttonBarStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 44;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4053,11 +4057,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorAccent
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorAccent
         */
         public static final int Theme_colorAccent = 77;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4068,11 +4072,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorButtonNormal
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 81;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4083,11 +4087,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorControlActivated
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 79;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4098,11 +4102,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorControlHighlight
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 80;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4113,11 +4117,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorControlNormal
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 78;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4128,11 +4132,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorPrimary
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorPrimary
         */
         public static final int Theme_colorPrimary = 75;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4143,11 +4147,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorPrimaryDark
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 76;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4158,41 +4162,41 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:colorSwitchThumbNormal
+          @attr name ria.especializacao.inf.ufg.br.quiz:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 82;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:dividerHorizontal
+          @attr name ria.especializacao.inf.ufg.br.quiz:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 49;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:dividerVertical
+          @attr name ria.especializacao.inf.ufg.br.quiz:dividerVertical
         */
         public static final int Theme_dividerVertical = 48;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:dropDownListViewStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 67;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4204,21 +4208,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:dropdownListPreferredItemHeight
+          @attr name ria.especializacao.inf.ufg.br.quiz:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 39;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:editTextBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:editTextBackground
         */
         public static final int Theme_editTextBackground = 56;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4226,41 +4230,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:editTextColor
+          @attr name ria.especializacao.inf.ufg.br.quiz:editTextColor
         */
         public static final int Theme_editTextColor = 55;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:homeAsUpIndicator
+          @attr name ria.especializacao.inf.ufg.br.quiz:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 42;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:listChoiceBackgroundIndicator
+          @attr name ria.especializacao.inf.ufg.br.quiz:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 74;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPopupWindowStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4272,11 +4276,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeight
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 62;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4288,11 +4292,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeightLarge
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 64;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4304,11 +4308,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPreferredItemHeightSmall
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 63;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4320,11 +4324,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPreferredItemPaddingLeft
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 65;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4336,31 +4340,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:listPreferredItemPaddingRight
+          @attr name ria.especializacao.inf.ufg.br.quiz:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 66;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:panelBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:panelBackground
         */
         public static final int Theme_panelBackground = 71;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:panelMenuListTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 73;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4372,151 +4376,151 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:panelMenuListWidth
+          @attr name ria.especializacao.inf.ufg.br.quiz:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 72;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:popupMenuStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 53;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:popupWindowStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:searchViewStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:selectableItemBackground
+          @attr name ria.especializacao.inf.ufg.br.quiz:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 46;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:selectableItemBackgroundBorderless
+          @attr name ria.especializacao.inf.ufg.br.quiz:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 47;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:spinnerDropDownItemStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 41;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:spinnerStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 40;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:switchStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:switchStyle
         */
         public static final int Theme_switchStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceLargePopupMenu
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 36;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceListItem
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 69;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceListItemSmall
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceSearchResultSubtitle
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceSearchResultTitle
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 58;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textAppearanceSmallPopupMenu
+          @attr name ria.especializacao.inf.ufg.br.quiz:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 37;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4524,31 +4528,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:textColorSearchUrl
+          @attr name ria.especializacao.inf.ufg.br.quiz:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 60;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:toolbarNavigationButtonStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:toolbarStyle
+          @attr name ria.especializacao.inf.ufg.br.quiz:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4558,11 +4562,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowActionBar
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowActionBar
         */
         public static final int Theme_windowActionBar = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4572,11 +4576,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowActionBarOverlay
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4586,11 +4590,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowActionModeOverlay
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4605,11 +4609,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowFixedHeightMajor
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4624,11 +4628,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowFixedHeightMinor
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4643,11 +4647,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowFixedWidthMajor
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4662,7 +4666,7 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:windowFixedWidthMinor
+          @attr name ria.especializacao.inf.ufg.br.quiz:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 6;
         /** Attributes that can be used with a Toolbar.
@@ -4673,26 +4677,26 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription ria.especializacao.inf.ufg.br.quizz:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon ria.especializacao.inf.ufg.br.quizz:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd ria.especializacao.inf.ufg.br.quizz:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft ria.especializacao.inf.ufg.br.quizz:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight ria.especializacao.inf.ufg.br.quizz:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart ria.especializacao.inf.ufg.br.quizz:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight ria.especializacao.inf.ufg.br.quizz:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription ria.especializacao.inf.ufg.br.quizz:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon ria.especializacao.inf.ufg.br.quizz:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme ria.especializacao.inf.ufg.br.quizz:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle ria.especializacao.inf.ufg.br.quizz:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ria.especializacao.inf.ufg.br.quizz:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme ria.especializacao.inf.ufg.br.quizz:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title ria.especializacao.inf.ufg.br.quizz:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom ria.especializacao.inf.ufg.br.quizz:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd ria.especializacao.inf.ufg.br.quizz:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart ria.especializacao.inf.ufg.br.quizz:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop ria.especializacao.inf.ufg.br.quizz:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins ria.especializacao.inf.ufg.br.quizz:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance ria.especializacao.inf.ufg.br.quizz:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription ria.especializacao.inf.ufg.br.quiz:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon ria.especializacao.inf.ufg.br.quiz:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd ria.especializacao.inf.ufg.br.quiz:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft ria.especializacao.inf.ufg.br.quiz:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight ria.especializacao.inf.ufg.br.quiz:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart ria.especializacao.inf.ufg.br.quiz:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight ria.especializacao.inf.ufg.br.quiz:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription ria.especializacao.inf.ufg.br.quiz:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon ria.especializacao.inf.ufg.br.quiz:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme ria.especializacao.inf.ufg.br.quiz:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle ria.especializacao.inf.ufg.br.quiz:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ria.especializacao.inf.ufg.br.quiz:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme ria.especializacao.inf.ufg.br.quiz:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title ria.especializacao.inf.ufg.br.quiz:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom ria.especializacao.inf.ufg.br.quiz:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd ria.especializacao.inf.ufg.br.quiz:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart ria.especializacao.inf.ufg.br.quiz:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop ria.especializacao.inf.ufg.br.quiz:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins ria.especializacao.inf.ufg.br.quiz:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance ria.especializacao.inf.ufg.br.quiz:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -4738,7 +4742,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4748,21 +4752,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:collapseContentDescription
+          @attr name ria.especializacao.inf.ufg.br.quiz:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:collapseIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4774,11 +4778,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetEnd
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4790,11 +4794,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetLeft
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4806,11 +4810,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetRight
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4822,11 +4826,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:contentInsetStart
+          @attr name ria.especializacao.inf.ufg.br.quiz:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4838,11 +4842,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:maxButtonHeight
+          @attr name ria.especializacao.inf.ufg.br.quiz:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4852,31 +4856,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:navigationContentDescription
+          @attr name ria.especializacao.inf.ufg.br.quiz:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:navigationIcon
+          @attr name ria.especializacao.inf.ufg.br.quiz:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:popupTheme
+          @attr name ria.especializacao.inf.ufg.br.quiz:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4886,31 +4890,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:subtitle
+          @attr name ria.especializacao.inf.ufg.br.quiz:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:subtitleTextAppearance
+          @attr name ria.especializacao.inf.ufg.br.quiz:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#theme}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:theme
+          @attr name ria.especializacao.inf.ufg.br.quiz:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#title}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4920,11 +4924,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:title
+          @attr name ria.especializacao.inf.ufg.br.quiz:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4936,11 +4940,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleMarginBottom
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4952,11 +4956,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleMarginEnd
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4968,11 +4972,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleMarginStart
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -4984,11 +4988,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleMarginTop
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5000,17 +5004,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleMargins
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ria.especializacao.inf.ufg.br.quizz:titleTextAppearance
+          @attr name ria.especializacao.inf.ufg.br.quiz:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -5020,8 +5024,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd ria.especializacao.inf.ufg.br.quizz:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart ria.especializacao.inf.ufg.br.quizz:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd ria.especializacao.inf.ufg.br.quiz:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart ria.especializacao.inf.ufg.br.quiz:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -5037,7 +5041,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5049,11 +5053,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:paddingEnd
+          @attr name ria.especializacao.inf.ufg.br.quiz:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quizz.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link ria.especializacao.inf.ufg.br.quiz.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5065,7 +5069,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ria.especializacao.inf.ufg.br.quizz:paddingStart
+          @attr name ria.especializacao.inf.ufg.br.quiz:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.

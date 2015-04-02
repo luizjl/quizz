@@ -9,10 +9,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
-
-import ria.especializacao.inf.ufg.quizz.model.Questoes;
-import ria.especializacao.inf.ufg.utils.ParserJson;
 
 /**
  * Created by Ronie on 28/03/2015.

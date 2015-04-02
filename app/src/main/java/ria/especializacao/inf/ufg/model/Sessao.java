@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.quizz.model;
+package ria.especializacao.inf.ufg.model;
 
 /**
  * Created by danillo on 31/03/2015.
