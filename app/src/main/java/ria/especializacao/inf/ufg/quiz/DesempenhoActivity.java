@@ -11,18 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-import ria.especializacao.inf.ufg.fragment.CategoriaFragment;
 import ria.especializacao.inf.ufg.quiz.R;
 
-public class CategoriaActivity extends ActionBarActivity {
+public class DesempenhoActivity extends ActionBarActivity {
+
+    static Object[] dados = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categoria);
+        setContentView(R.layout.activity_desempenho);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new CategoriaFragment())
+                    .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
     }
@@ -31,7 +32,7 @@ public class CategoriaActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_categoria, menu);
+        getMenuInflater().inflate(R.menu.menu_desempenho, menu);
         return true;
     }
 
@@ -61,7 +62,7 @@ public class CategoriaActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_categoria, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_desempenho, container, false);
             return rootView;
         }
     }
