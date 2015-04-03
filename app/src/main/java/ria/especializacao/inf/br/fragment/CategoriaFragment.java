@@ -1,6 +1,7 @@
 package ria.especializacao.inf.br.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import ria.especializacao.inf.br.quiz.QuestaoActivity;
 import ria.especializacao.inf.ufg.quiz.R;
 
 /**
@@ -90,7 +92,8 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
-                Toast.makeText(getActivity(), "Você Clicou Em " + categoriaAdapter.getItemId(position), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), QuestaoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -112,7 +115,6 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
                 }
             }
         }
-
 
         @Override
         protected String[] doInBackground(Void... params)

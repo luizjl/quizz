@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    tools:context="ria.especializacao.inf.ufg.quiz.DesempenhoActivity$PlaceholderFragment">
+    tools:context="ria.especializacao.inf.br.quiz.DesempenhoActivity$PlaceholderFragment">
 
     <TableRow
         android:layout_gravity="center"
