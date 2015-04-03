@@ -4,9 +4,60 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="ria.especializacao.inf.ufg.quiz.QuestaoActivity$PlaceholderFragment">
+    tools:context="ria.especializacao.inf.br.quiz.QuestaoActivity$PlaceholderFragment">
 
-    <TextView android:text="Questão" android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/idCabecalho"
+        android:text=""
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/idAlternativaQuestao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idCabecalho"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/idAltenativa1"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/idAltenativa2"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/idAltenativa3"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/idAltenativa4"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/idAltenativa5"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/respostaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:onClick="enviarResposta"
+        android:layout_below="@+id/idAlternativaQuestao"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

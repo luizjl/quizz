@@ -1,4 +1,4 @@
-package ria.especializacao.inf.ufg.br.quizz;
+package ria.especializacao.inf.ufg.br.quiz;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
