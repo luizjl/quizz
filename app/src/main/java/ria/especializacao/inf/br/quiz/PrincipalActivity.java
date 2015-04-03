@@ -17,7 +17,6 @@ import android.widget.Toast;
 import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Sessao;
 import ria.especializacao.inf.ufg.quiz.R;
-import ria.especializacao.inf.br.httpconnection.QuizService;
 
 
 public class PrincipalActivity extends ActionBarActivity {
