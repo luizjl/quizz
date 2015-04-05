@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Sessao;
-import ria.especializacao.inf.ufg.quiz.R;
+import ria.especializacao.inf.br.quiz.R;
 
 
 public class PrincipalActivity extends ActionBarActivity {
@@ -39,17 +39,10 @@ public class PrincipalActivity extends ActionBarActivity {
         /*Sessao sessao = new Sessao();
         SessaoDAO sessaoDAO = new SessaoDAO(this);
 
-        sessao.setData("02/04/2015");
-        sessao.setHoraInicial("20:40");
-        sessao.setHoraFinal("20:50");
-        sessao.setQtdAcertos(5);
-        sessao.setQtdQuestoes(10);
-        sessao.setAcertosEngSoftware(1);
-        sessao.setAcertosGovernanca(1);
-        sessao.setAcertosDesenvolvimento(1);
-        sessao.setAcertosRedes(1);
+        sessao.setQtdAcertos(0);
+        sessao.setQtdErros(0);
 
-        sessaoDAO.inserir(sessao);*/
+        sessaoDAO.inserir(sessao); */
 
     }
 

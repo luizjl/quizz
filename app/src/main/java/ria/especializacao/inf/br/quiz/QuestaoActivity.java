@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import ria.especializacao.inf.br.fragment.QuestaoFragment;
-import ria.especializacao.inf.ufg.quiz.R;
+import ria.especializacao.inf.br.quiz.R;
 
 public class QuestaoActivity extends ActionBarActivity
 {

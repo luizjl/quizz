@@ -1,5 +1,6 @@
 package ria.especializacao.inf.br.fragment;
 
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,7 +35,7 @@ import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Questoes;
 import ria.especializacao.inf.br.model.Sessao;
 import ria.especializacao.inf.br.utils.ParserJson;
-import ria.especializacao.inf.ufg.quiz.R;
+import ria.especializacao.inf.br.quiz.R;
 
 /**
  * Encapsulates fetching the forecast and displaying it as a {@link android.widget.ListView} layout.
@@ -45,11 +46,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     private RadioGroup alternativaQuestao;
     private List<Questoes> questoesList;
     private Integer indiceList = 0;
-    private Sessao sessao = new Sessao();
-    private SessaoDAO sessaoDAO = new SessaoDAO(getActivity());
-    private int qtdAcerto = 0;
-    private int qtdQuestao = 0;
-    private Date date;
+    private Sessao sessao;
+    private SessaoDAO sessaoDAO;
 
     public QuestaoFragment()
     {
@@ -60,6 +58,9 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+
+        sessaoDAO = new SessaoDAO(getActivity());
+        sessao = new Sessao();
     }
 
     @Override
@@ -110,8 +111,6 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 //Toast.makeText(getActivity(), String.valueOf(validarQuestao(idx, questoesList.get(indiceList).getResposta())), Toast.LENGTH_SHORT).show();
                 boolean resultado = validarQuestao(idx, questoesList.get(indiceList).getResposta());
 
-
-
             }
         });
 
@@ -120,21 +119,25 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
 
     public Boolean validarQuestao(int idx, int resposta)
     {
-        qtdQuestao++;
-
-        if(idx == resposta)
-        {
-            qtdAcerto++;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    public void salvarEstatistica()
-    {
+            if(idx == resposta)
+            {
+                int acertos = sessao.getQtdAcertos();
+                acertos++;
+                sessao.setQtdAcertos(acertos);
+                sessaoDAO.inserir(sessao);
+               sessao =  sessaoDAO.getSessoes();
+               Log.v("Sessao", String.valueOf(sessao.getQtdAcertos()));
+               Log.v("Sessao", String.valueOf(acertos));
+                return true;
+            }
+            else
+            {
+                int erros = sessao.getQtdErros();
+                erros++;
+                sessao.setQtdErros(erros);
+                sessaoDAO.inserir(sessao);
+                return false;
+            }
 
     }
 

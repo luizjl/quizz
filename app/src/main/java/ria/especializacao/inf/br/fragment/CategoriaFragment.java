@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import ria.especializacao.inf.br.quiz.QuestaoActivity;
-import ria.especializacao.inf.ufg.quiz.R;
+import ria.especializacao.inf.br.quiz.R;
 
 /**
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.

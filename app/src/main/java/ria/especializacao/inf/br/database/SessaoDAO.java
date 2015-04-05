@@ -28,54 +28,36 @@ public class SessaoDAO {
     public long inserir( Sessao sessao ){
         bd =  quizBD.getWritableDatabase();
         ContentValues valores =  new ContentValues();
-        valores.put("data",sessao.getData());
-        valores.put("horaInicial",sessao.getHoraInicial());
-        valores.put("horaFinal",sessao.getHoraFinal());
-        valores.put("qtdAcertos",sessao.getQtdAcertos());
-        valores.put("qtdQuestoes",sessao.getQtdQuestoes());
-        valores.put("acertosEngSoftware",sessao.getAcertosEngSoftware());
-        valores.put("acertosDesenvolvimento",sessao.getAcertosDesenvolvimento());
-        valores.put("acertosRedes",sessao.getAcertosRedes());
-        valores.put("acertosGovernanca",sessao.getAcertosGovernanca());
-        return  bd.insert("sessao",null,valores);
+        valores.put("qtdAcertos", sessao.getQtdAcertos());
+        valores.put("qtdErros", getSessoes().getQtdErros());
+
+        String[] args = {"1"} ;
+
+        return  bd.insert("sessao", null, valores);
     }
 
-    public List<Sessao> getSessoes(){
+    public Sessao getSessoes(){
 
         bd = quizBD.getReadableDatabase();
 
-        List<Sessao> listaSessao = new ArrayList<Sessao>();
+        Sessao sessao = new Sessao();
 
-        String[] colunas  = {"data","horaInicial","horaFinal","qtdAcertos","qtdQuestoes"
-        ,"acertosEngSoftware","acertosDesenvolvimento","acertosRedes","acertosGovernanca"};
+        String[] colunas  = {"qtdAcertos","qtdErros"};
 
-        String order = "data,horaInicial desc";
-
-        Cursor cursor = bd.query("sessao",colunas,null,null,null,null,order);
+        Cursor cursor = bd.query("sessao", colunas, null, null, null, null, null);
 
 
-        if ( cursor.getCount() > 0){
+        if ( cursor.getCount() > 0)
+        {
             cursor.moveToFirst();
 
-            do {
-                Sessao sessao = new Sessao();
-                sessao.setData(cursor.getString(0));
-                sessao.setHoraInicial(cursor.getString(1));
-                sessao.setHoraFinal(cursor.getString(2));
-                sessao.setQtdAcertos(cursor.getInt(3));
-                sessao.setQtdQuestoes(cursor.getInt(4));
-                sessao.setAcertosEngSoftware(cursor.getInt(5));
-                sessao.setAcertosDesenvolvimento(cursor.getInt(6));
-                sessao.setAcertosRedes(cursor.getInt(7));
-                sessao.setAcertosGovernanca(cursor.getInt(8));
-                listaSessao.add(sessao);
-
-            }while (cursor.moveToNext());
+            sessao.setQtdAcertos(cursor.getInt(0));
+            sessao.setQtdErros(cursor.getInt(1));
+            return sessao;
         }
-
-        return listaSessao;
+        else
+        {
+            return null;
+        }
     }
-
-
-
 }

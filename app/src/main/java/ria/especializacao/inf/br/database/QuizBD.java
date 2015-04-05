@@ -12,7 +12,7 @@ public class QuizBD extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Quiz";
     private static final String DATATABLE_NAME = "sessao";
     private static final String DATATABLE_NAME_2 = "registro";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 13;
 
 
 
@@ -21,16 +21,9 @@ public class QuizBD extends SQLiteOpenHelper {
      * */
     private static final String DATABASE_CREATE_SESSAO =
             "CREATE TABLE  if not exists "+DATATABLE_NAME+"("+
-                    "_id integer PRIMARY KEY," +
-                    "data text not null," +
-                    "horaInicial text not null," +
-                    "horaFinal text not null," +
+                    "id integer PRIMARY KEY AUTOINCREMENT ," +
                     "qtdAcertos integer," +
-                    "qtdQuestoes integer," +
-                    "acertosEngSoftware integer," +
-                    "acertosDesenvolvimento integer," +
-                    "acertosRedes integer," +
-                    "acertosGovernanca integer)";
+                    "qtdErros integer)";
 
 
     private  static final String DATABASE_CREATE_REGISTRO = "" +
@@ -46,7 +39,8 @@ public class QuizBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DATABASE_CREATE_SESSAO);
-        db.execSQL(DATABASE_CREATE_REGISTRO);
+        //db.execSQL(DATABASE_CREATE_REGISTRO);
+        db.execSQL("INSERT INTO sessao (qtdAcertos, qtdErros) VALUES ('0', '0')");
     }
 
     @Override
