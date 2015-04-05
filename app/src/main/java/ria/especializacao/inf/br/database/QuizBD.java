@@ -3,6 +3,7 @@ package ria.especializacao.inf.br.database;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by danillo on 31/03/2015.
@@ -12,7 +13,7 @@ public class QuizBD extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Quiz";
     private static final String DATATABLE_NAME = "sessao";
     private static final String DATATABLE_NAME_2 = "registro";
-    private static final int DATABASE_VERSION = 13;
+    private static final int DATABASE_VERSION = 19;
 
 
 
@@ -27,7 +28,7 @@ public class QuizBD extends SQLiteOpenHelper {
 
 
     private  static final String DATABASE_CREATE_REGISTRO = "" +
-            "CREATE TABLE if not exist "+DATATABLE_NAME_2+"("+
+            "CREATE TABLE if not exists "+DATATABLE_NAME_2+"("+
             "idPergunta integer )";
 
 
@@ -39,8 +40,9 @@ public class QuizBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DATABASE_CREATE_SESSAO);
-        //db.execSQL(DATABASE_CREATE_REGISTRO);
-        db.execSQL("INSERT INTO sessao (qtdAcertos, qtdErros) VALUES ('0', '0')");
+        db.execSQL(DATABASE_CREATE_REGISTRO);
+        db.execSQL("INSERT INTO sessao (qtdAcertos, qtdErros) VALUES (0, 0)");
+        Log.v("Sqlite","Criando de tabelas");
     }
 
     @Override

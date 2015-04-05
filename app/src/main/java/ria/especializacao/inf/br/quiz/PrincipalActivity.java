@@ -21,6 +21,7 @@ import ria.especializacao.inf.br.quiz.R;
 
 public class PrincipalActivity extends ActionBarActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

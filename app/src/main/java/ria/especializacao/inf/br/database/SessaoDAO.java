@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class SessaoDAO {
         quizBD = new QuizBD(this.contexto);
     }
 
-    public long inserir( Sessao sessao ){
+    public long atualizar( Sessao sessao ){
         bd =  quizBD.getWritableDatabase();
         ContentValues valores =  new ContentValues();
         valores.put("qtdAcertos", sessao.getQtdAcertos());
@@ -33,7 +34,7 @@ public class SessaoDAO {
 
         String[] args = {"1"} ;
 
-        return  bd.insert("sessao", null, valores);
+        return  bd.update("sessao",valores,"id=?",args);
     }
 
     public Sessao getSessoes(){
@@ -50,7 +51,6 @@ public class SessaoDAO {
         if ( cursor.getCount() > 0)
         {
             cursor.moveToFirst();
-
             sessao.setQtdAcertos(cursor.getInt(0));
             sessao.setQtdErros(cursor.getInt(1));
             return sessao;

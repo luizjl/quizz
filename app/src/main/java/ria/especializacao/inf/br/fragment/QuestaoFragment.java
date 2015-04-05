@@ -121,13 +121,14 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     {
             if(idx == resposta)
             {
-                int acertos = sessao.getQtdAcertos();
+                int acertos = sessaoDAO.getSessoes().getQtdAcertos();
+                Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdAcertos())+" Variavel Acertos:"+acertos);
                 acertos++;
                 sessao.setQtdAcertos(acertos);
-                sessaoDAO.inserir(sessao);
-               sessao =  sessaoDAO.getSessoes();
-               Log.v("Sessao", String.valueOf(sessao.getQtdAcertos()));
-               Log.v("Sessao", String.valueOf(acertos));
+                sessao.setQtdErros(3);
+                sessaoDAO.atualizar(sessao);
+                sessao =  sessaoDAO.getSessoes();
+                Log.v("Sessao", String.valueOf(acertos));
                 return true;
             }
             else
@@ -135,7 +136,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 int erros = sessao.getQtdErros();
                 erros++;
                 sessao.setQtdErros(erros);
-                sessaoDAO.inserir(sessao);
+                sessaoDAO.atualizar(sessao);
                 return false;
             }
 
