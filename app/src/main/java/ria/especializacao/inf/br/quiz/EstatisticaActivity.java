@@ -24,6 +24,8 @@ import ria.especializacao.inf.br.quiz.R;
 
 public class EstatisticaActivity extends ActionBarActivity {
 
+    private static SessaoDAO sessaoDAO;
+
 
     @Override
 
@@ -65,9 +67,10 @@ public class EstatisticaActivity extends ActionBarActivity {
      */
     public static class PlaceholderFragment extends Fragment {
 
-        private ListView mainListViewEstatistica;
-        private TextView msgText;
-        String[] strListView;
+        private TextView msgAcertos;
+        private TextView msgErros;
+        private TextView msgTotal;
+        private  View rootView;
 
 
         public PlaceholderFragment() {
@@ -78,7 +81,20 @@ public class EstatisticaActivity extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
 
-            View rootView = inflater.inflate(R.layout.fragment_estatistica, container, false);
+            rootView = inflater.inflate(R.layout.fragment_estatistica, container, false);
+
+            msgAcertos = (TextView) rootView.findViewById(R.id.acertos);
+            msgErros   = (TextView) rootView.findViewById(R.id.erros);
+            msgTotal   = (TextView) rootView.findViewById(R.id.total);
+
+            sessaoDAO = new SessaoDAO(getActivity());
+
+            Log.v("***Acertos",+sessaoDAO.getSessoes().getQtdAcertos()+" Erros:"+sessaoDAO.getSessoes().getQtdErros());
+
+
+            msgAcertos.setText(msgAcertos.getText()+String.valueOf(sessaoDAO.getSessoes().getQtdAcertos()));
+            msgErros.setText(msgErros.getText()+String.valueOf(sessaoDAO.getSessoes().getQtdErros()));
+            msgTotal.setText(msgTotal.getText()+String.valueOf(sessaoDAO.getSessoes().getQtdAcertos()+sessaoDAO.getSessoes().getQtdErros()));
 
 
 
