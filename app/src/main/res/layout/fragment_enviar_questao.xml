@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/ScrollViewEnviarQuestao"
+    tools:context="ria.especializacao.inf.br.quiz.EnviarQuestaoActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutRelativo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Ano -->
+        <TextView
+            android:id="@+id/tvAno"
+            android:text="@string/str_tv_ano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+
+        <EditText
+            android:id="@+id/etAno"
+            android:inputType="number"
+            android:layout_below="@id/tvAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ano" />
+
+        <!-- Categoria -->
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_below="@id/etAno"
+            android:text="@string/str_tv_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <!-- EditText
+            android:id="@+id/etCategoria"
+            android:layout_below="@id/tvCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Categoria" / -->
+
+        <Spinner
+            android:id="@+id/spCategoria"
+            android:layout_below="@id/tvCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+        <!-- Cargo -->
+        <TextView
+            android:id="@+id/tvCargo"
+            android:layout_below="@id/spCategoria"
+            android:text="@string/str_tv_cargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/etCargo"
+            android:layout_below="@id/tvCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Instituição -->
+        <TextView
+            android:id="@+id/tvInstituicao"
+            android:layout_below="@id/etCargo"
+            android:text="@string/str_tv_instituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etInstituicao"
+            android:layout_below="@id/tvInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Órgão -->
+        <TextView
+            android:id="@+id/tvOrgao"
+            android:layout_below="@id/etInstituicao"
+            android:text="@string/str_tv_orgao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etOrgao"
+            android:layout_below="@id/tvOrgao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Questão -->
+        <TextView
+            android:id="@+id/tvQuestao"
+            android:layout_below="@id/etOrgao"
+            android:text="@string/str_tv_questao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etQuestao"
+            android:layout_below="@id/etOrgao"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:lines="@integer/abc_max_action_buttons"
+            android:layout_height="fill_parent" />
+
+        <!-- Alternativa 1 -->
+        <TextView
+            android:id="@+id/tvAlternativa1"
+            android:layout_below="@id/etQuestao"
+            android:text="@string/str_tv_alternativa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etAlternativa1"
+            android:layout_below="@id/tvAlternativa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Alternativa 2 -->
+        <TextView
+            android:id="@+id/tvAlternativa2"
+            android:layout_below="@id/etAlternativa1"
+            android:text="@string/str_tv_alternativa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etAlternativa2"
+            android:layout_below="@id/tvAlternativa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+ <!-- Alternativa 3 -->
+        <TextView
+            android:id="@+id/tvAlternativa3"
+            android:layout_below="@id/etAlternativa2"
+            android:text="@string/str_tv_alternativa3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etAlternativa3"
+            android:layout_below="@id/tvAlternativa3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!-- Alternativa 4 -->
+        <TextView
+            android:id="@+id/tvAlternativa4"
+            android:layout_below="@id/etAlternativa3"
+            android:text="@string/str_tv_alternativa4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etAlternativa4"
+            android:layout_below="@id/tvAlternativa4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!-- Alternativa 5 -->
+        <TextView
+            android:id="@+id/tvAlternativa5"
+            android:layout_below="@id/etAlternativa4"
+            android:text="@string/str_tv_alternativa5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etAlternativa5"
+            android:layout_below="@id/tvAlternativa5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!-- Resposta -->
+        <TextView
+            android:id="@+id/tvResposta"
+            android:layout_below="@id/etAlternativa5"
+            android:text="@string/str_tv_resposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:id="@+id/spResposta"
+            android:layout_below="@id/tvResposta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_below="@id/spResposta"
+            android:text="@string/str_bt_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
