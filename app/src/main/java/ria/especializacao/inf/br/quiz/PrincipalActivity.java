@@ -112,7 +112,8 @@ public class PrincipalActivity extends ActionBarActivity {
                             Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
                         case "Enviar Questão":
-                            Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
+                            Intent intentEQ = new Intent(getActivity(), EnviarQuestaoActivity.class);
+                            startActivity(intentEQ);
                             break;
                         case "Desempenho":
                             intent = new Intent(getActivity(), EstatisticaActivity.class);

@@ -6,5 +6,34 @@
     <string name="title_activity_questao">Questão</string>
 
 <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_tv_ano">Ano:</string>
+    <string name="str_tv_categoria">Categoria:</string>
+    <string name="str_tv_cargo">Cargo:</string>
+    <string name="str_tv_instituicao">Instituição:</string>
+    <string name="str_tv_orgao">Órgão:</string>
+    <string name="str_tv_questao">Questão:</string>
+    <string name="str_bt_enviar">Enviar</string>
+    <string name="str_tv_alternativa1">Alternativa 1</string>
+    <string name="str_tv_alternativa2">Alternativa 2</string>
+    <string name="str_tv_alternativa3">Alternativa 3</string>
+    <string name="str_tv_alternativa4">Alternativa 4</string>
+    <string name="str_tv_alternativa5">Alternativa 5</string>
+    <string name="str_tv_resposta">Resposta Certa</string>
+    <string name="title_activity_enviar_questao">Sugerir Questão</string>
+
+    <string-array name="opcoes_array">
+        <item>Alternativa 1</item>
+        <item>Alternativa 2</item>
+        <item>Alternativa 3</item>
+        <item>Alternativa 4</item>
+        <item>Alternativa 5</item>
+    </string-array>
+
+    <string-array name="categorias_array">
+        <item>Engenharia de Software</item>
+        <item>Redes</item>
+        <item>Governança/Gestão de TI</item>
+        <item>Desenvolvimento</item>
+        <item>Banco de Dados</item>
+    </string-array>
 </resources>
