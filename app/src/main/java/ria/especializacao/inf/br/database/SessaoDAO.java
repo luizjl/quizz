@@ -30,7 +30,7 @@ public class SessaoDAO {
         bd =  quizBD.getWritableDatabase();
         ContentValues valores =  new ContentValues();
         valores.put("qtdAcertos", sessao.getQtdAcertos());
-        valores.put("qtdErros", getSessoes().getQtdErros());
+        valores.put("qtdErros", sessao.getQtdErros());
 
         String[] args = {"1"} ;
 
