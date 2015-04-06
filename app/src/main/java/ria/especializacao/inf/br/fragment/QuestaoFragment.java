@@ -48,6 +48,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     private Integer indiceList = 0;
     private Sessao sessao;
     private SessaoDAO sessaoDAO;
+    private int cont = 1;
+    private Button button;
 
     public QuestaoFragment()
     {
@@ -88,6 +90,9 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     {
         final View rootView = inflater.inflate(R.layout.fragment_questao, container, false);
 
+        final Button proximaQuestao = (Button) rootView.findViewById(R.id.proximaQuestaoButton);
+        proximaQuestao.setVisibility(View.INVISIBLE);
+
         int idCategoria = getActivity().getIntent().getIntExtra("idCategoria", 0);
         //Toast.makeText(getActivity(), "Você Clicou" + idCategoria, Toast.LENGTH_SHORT).show();
 
@@ -97,7 +102,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
         FetchQuestaoTask fetchQuestaoTask = new FetchQuestaoTask();
         fetchQuestaoTask.execute(idCategoria);
 
-        Button button = (Button) rootView.findViewById(R.id.respostaButton);
+        button = (Button) rootView.findViewById(R.id.respostaButton);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -111,6 +116,50 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 //Toast.makeText(getActivity(), String.valueOf(validarQuestao(idx, questoesList.get(indiceList).getResposta())), Toast.LENGTH_SHORT).show();
                 boolean resultado = validarQuestao(idx, questoesList.get(indiceList).getResposta());
 
+                if(resultado)
+                {
+                    Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
+                    radioButton.setBackgroundColor(Color.GREEN);
+                }
+                else
+                {
+                    Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
+                    radioButton.setBackgroundColor(Color.RED);
+                }
+
+                proximaQuestao.setVisibility(View.VISIBLE);
+            }
+        });
+
+        proximaQuestao.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if(cont < questoesList.size())
+                {
+
+                    cabecalhoQuestao.setText(questoesList.get(cont).getCabecalho());
+                    for (int i = 0; i < alternativaQuestao.getChildCount(); i++) {
+                        ((RadioButton) alternativaQuestao.getChildAt(i)).setText(questoesList.get(cont).getAlternativas().get(i));
+                    }
+
+                    cont++;
+                    proximaQuestao.setVisibility(View.INVISIBLE);
+
+                    // LIMPANDO CHECKBOX E UNCHEKING
+                    int radioButtonID = alternativaQuestao.getCheckedRadioButtonId();
+                    View radioButton = alternativaQuestao.findViewById(radioButtonID);
+                    radioButton.setBackgroundColor(Color.TRANSPARENT);
+                    alternativaQuestao.clearCheck();
+                }
+                else
+                {
+                    alternativaQuestao.setVisibility(View.INVISIBLE);
+                    button.setVisibility(View.INVISIBLE);
+                    proximaQuestao.setVisibility(View.INVISIBLE);
+                    cabecalhoQuestao.setText("VOCÊ JÁ RESPONDEU TODAS AS PERGUNTAS DESSA CATEGORIA!");
+                }
             }
         });
 
@@ -119,26 +168,33 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
 
     public Boolean validarQuestao(int idx, int resposta)
     {
-            if(idx == resposta)
-            {
-                int acertos = sessaoDAO.getSessoes().getQtdAcertos();
-                Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdAcertos())+" Variavel Acertos:"+acertos);
-                acertos++;
-                sessao.setQtdAcertos(acertos);
-                sessao.setQtdErros(3);
-                sessaoDAO.atualizar(sessao);
-                sessao =  sessaoDAO.getSessoes();
-                Log.v("Sessao", String.valueOf(acertos));
-                return true;
-            }
-            else
-            {
-                int erros = sessao.getQtdErros();
-                erros++;
-                sessao.setQtdErros(erros);
-                sessaoDAO.atualizar(sessao);
-                return false;
-            }
+        int acertos = sessaoDAO.getSessoes().getQtdAcertos();
+        int erros = sessaoDAO.getSessoes().getQtdErros();
+
+        if(idx == resposta)
+        {
+            //int acertos = sessaoDAO.getSessoes().getQtdAcertos();
+            Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdAcertos())+" Variavel Acertos:"+acertos);
+            acertos++;
+            sessao.setQtdAcertos(acertos);
+            sessao.setQtdErros(erros);
+            sessaoDAO.atualizar(sessao);
+            sessao =  sessaoDAO.getSessoes();
+            Log.v("Sessao", String.valueOf(acertos));
+            return true;
+        }
+        else
+        {
+            //int erros = sessao.getQtdErros();
+            Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdErros())+" Variavel Erros:"+erros);
+            erros++;
+            sessao.setQtdAcertos(acertos);
+            sessao.setQtdErros(erros);
+            sessaoDAO.atualizar(sessao);
+            sessao =  sessaoDAO.getSessoes();
+            Log.v("Sessao", String.valueOf(erros));
+            return false;
+        }
 
     }
 
@@ -157,34 +213,13 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 }
 
                 questoesList = result;
-
-                /*for (int i = 0; i < result.size(); i++)
-                {
-                    cabecalhoQuestao.setText(result.get(i).getCabecalho());
-
-                    for(int j = 0; j < alternativaQuestao.getChildCount(); j++)
-                    {
-                        ((RadioButton) alternativaQuestao.getChildAt(j)).setText(result.get(i).getAlternativas().get(j));
-                    }
-
-                } */
             }
             else
             {
                 alternativaQuestao.setVisibility(View.INVISIBLE);
+                button.setVisibility(View.INVISIBLE);
                 cabecalhoQuestao.setText("Não Há Questões Cadastradas :(");
             }
-
-            /*int i = 1;
-
-            if(result != null)
-            {
-                cabecalhoQuestao.setText(result.get(i).getCabecalho());
-            }
-            else
-            {
-                cabecalhoQuestao.setText("Não Há Questões Cadastradas =(");
-            }*/
         }
 
         @Override
