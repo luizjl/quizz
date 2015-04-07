@@ -2,6 +2,7 @@ package ria.especializacao.inf.br.quiz;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -35,6 +36,12 @@ public class EstatisticaActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(ria.especializacao.inf.br.quiz.R.layout.activity_estatistica);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("ConQuiz TI");
+
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.rgb(0,191,255)));
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(ria.especializacao.inf.br.quiz.R.id.container, new PlaceholderFragment())

@@ -1,6 +1,8 @@
 package ria.especializacao.inf.br.quiz;
 
 import android.app.DialogFragment;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -32,6 +34,11 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enviar_questao);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("ConQuiz TI");
+
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.rgb(0, 191, 255)));
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
