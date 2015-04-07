@@ -34,6 +34,8 @@ public class ListaQuestoesDialogFragment extends DialogFragment {
         ds = new SugestaoDAO(getActivity());
         ds.open();
 
+        getDialog().setTitle("Lista de Questões Enviadas");
+
         List<Questoes> questoes = ds.getAllQuestoes();
 
         RelativeLayout fl = (RelativeLayout) v.findViewById(R.id.meuFrameLayout);

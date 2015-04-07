@@ -19,6 +19,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import ria.especializacao.inf.br.database.SugestaoDAO;
 import ria.especializacao.inf.br.fragment.ListaQuestoesDialogFragment;
 import ria.especializacao.inf.br.model.Questoes;
@@ -90,24 +92,90 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
             ArrayAdapter<CharSequence> adapterCategoria = ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.categorias_array, android.R.layout.simple_spinner_item);
             adapterCategoria.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spCategoria.setAdapter(adapterCategoria);
-            //spinner.setOnItemSelectedListener(new AlternativatemSelectedListener());
+
             Button btSalvar = (Button) rootView.findViewById(R.id.btSalvar);
             btSalvar.setOnClickListener(new Button.OnClickListener() {
                 public void onClick(View v) {
 
                     ds.open();
 
-                    Questoes q = viewToQuestao();
+                    EditText etAno = (EditText) getActivity().findViewById(R.id.etAno);
 
-                    long res = ds.adicionarQuestao(q);
+                    Spinner spCategoria = (Spinner) getActivity().findViewById(R.id.spCategoria);
+                    String strCategoria = (String) spCategoria.getSelectedItem();
 
-                    Log.i("ADICIONANDO", String.valueOf(res));
+                    EditText etCargo = (EditText) getActivity().findViewById(R.id.etCargo);
 
-                    if(res > 0)
-                        Toast.makeText(getActivity(), "Questão Enviada com sucesso!", Toast.LENGTH_LONG).show();
+                    EditText etInstituicao = (EditText) getActivity().findViewById(R.id.etInstituicao);
 
-                    DialogFragment newFragment = ListaQuestoesDialogFragment.newInstance();
-                    newFragment.show(getActivity().getFragmentManager(), "dialog");
+                    EditText etOrgao = (EditText) getActivity().findViewById(R.id.etOrgao);
+
+                    EditText etQuestao = (EditText) getActivity().findViewById(R.id.etQuestao);
+
+                    EditText etAlternativa1 = (EditText) getActivity().findViewById(R.id.etAlternativa1);
+
+                    EditText etAlternativa2 = (EditText) getActivity().findViewById(R.id.etAlternativa2);
+
+                    EditText etAlternativa3 = (EditText) getActivity().findViewById(R.id.etAlternativa3);
+
+                    EditText etAlternativa4 = (EditText) getActivity().findViewById(R.id.etAlternativa4);
+
+                    EditText etAlternativa5 = (EditText) getActivity().findViewById(R.id.etAlternativa5);
+
+                    Spinner spResposta = (Spinner) getActivity().findViewById(R.id.spResposta);
+
+                    if(etAno == null || etAno.getText().toString().equals("")) {
+                        mostrarErro("Por favor, digite o ANO!");
+                    }
+                    else if(strCategoria == null || strCategoria.equals("")) {
+                        mostrarErro("Selecione uma Categoria");
+                    }
+                    else if(etCargo == null || etCargo.getText().toString().equals("")) {
+                        mostrarErro("Insira o Cargo!");
+                    }
+                    else if(etInstituicao == null || etInstituicao.getText().toString().equals("")) {
+                        mostrarErro("De qual Institução?");
+                    }
+                    else if(etOrgao == null || etOrgao.getText().toString().equals("")) {
+                        mostrarErro("Prova de qual Órgão?");
+                    }
+                    else if(etQuestao == null || etQuestao.getText().toString().equals("")) {
+                        mostrarErro("Faltou a Questão!");
+                    }
+                    else if(etAlternativa1 == null || etAlternativa1.getText().toString().equals("")) {
+                        mostrarErro("Qual a primeira alternativa?");
+                    }
+                    else if(etAlternativa2 == null || etAlternativa2.getText().toString().equals("")) {
+                        mostrarErro("Digite a segunda alternativa!");
+                    }
+                    else if(etAlternativa3 == null || etAlternativa3.getText().toString().equals("")) {
+                        mostrarErro("Preencha a terceira alternativa!");
+                    }
+                    else if(etAlternativa4 == null || etAlternativa4.getText().toString().equals("")) {
+                        mostrarErro("Qual a quarta alternativa?");
+                    }
+                    else if(etAlternativa5 == null || etAlternativa5.getText().toString().equals("")) {
+                        mostrarErro("Falta apenas a última alternativa!");
+                    }
+                    else if(spResposta.getSelectedItem() == null || spResposta.getSelectedItem().equals("")) {
+                        mostrarErro("A Resposta?");
+                    }
+                    else
+                    {
+
+                        Questoes q = viewToQuestao();
+
+                        long res = ds.adicionarQuestao(q);
+
+                        //Log.i("ADICIONANDO", String.valueOf(res));
+
+                        if(res > 0)
+                            Toast.makeText(getActivity(), "Questão Enviada com sucesso!", Toast.LENGTH_LONG).show();
+
+                        DialogFragment newFragment = ListaQuestoesDialogFragment.newInstance();
+                        newFragment.show(getActivity().getFragmentManager(), "dialog");
+                    }
+
 
                 }
             });
@@ -120,7 +188,7 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
             Questoes questao = new Questoes();
 
             EditText etAno = (EditText) getActivity().findViewById(R.id.etAno);
-            int ano = Integer.parseInt(etAno.getText().toString());
+            Integer ano = Integer.parseInt(etAno.getText().toString());
             questao.setAno(ano);
 
             Spinner spCategoria = (Spinner) getActivity().findViewById(R.id.spCategoria);
@@ -165,6 +233,13 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
             return questao;
 
         }
+
+        public void mostrarErro(String msg){
+
+            Crouton.makeText(getActivity(), msg, Style.ALERT).show();
+        }
+
+
 
     }
 
