@@ -30,7 +30,6 @@ import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Sessao;
 import ria.especializacao.inf.br.quiz.R;
 
-
 public class PrincipalActivity extends ActionBarActivity  {
 
 

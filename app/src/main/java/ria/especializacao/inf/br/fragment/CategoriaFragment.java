@@ -1,6 +1,7 @@
 package ria.especializacao.inf.br.fragment;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -117,10 +119,10 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
                         intent.putExtra("idCategoria", 4);
                         startActivity(intent);
                         break;
-                    case "Todas as Categorias":
+                    /*case "Todas as Categorias":
                         intent.putExtra("idCategoria", 5);
                         startActivity(intent);
-                        break;
+                        break; */
                     case "Banco de Dados":
                         intent.putExtra("idCategoria", 6);
                         startActivity(intent);
@@ -134,6 +136,7 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
 
     public class FetchCategoriaTask extends AsyncTask<Void, Void, String[]>
     {
+
         @Override
         public void onPostExecute(String[] result)
         {

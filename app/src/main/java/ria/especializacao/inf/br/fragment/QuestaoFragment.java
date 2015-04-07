@@ -129,18 +129,18 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     {
                         Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
                         radioButton.setBackgroundColor(Color.GREEN);
+                        button.setVisibility(View.INVISIBLE);
+                        proximaQuestao.setVisibility(View.VISIBLE);
                     }
                     else
                     {
                         Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
                         radioButton.setBackgroundColor(Color.RED);
                     }
-
-                    proximaQuestao.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    Toast.makeText(getActivity(), "Selecione uma Das Opções!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Selecione Uma Das Opções!!", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -168,6 +168,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     }
 
                     cont++;
+
+                    button.setVisibility(View.VISIBLE);
                     proximaQuestao.setVisibility(View.INVISIBLE);
 
                     // LIMPANDO CHECKBOX E UNCHEKING
@@ -179,6 +181,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 }
                 else
                 {
+                    cabecalhoQuestao.setText("Não Há Mais Perguntas Para Essa Categoria!");
+
                     alternativaQuestao.setVisibility(View.INVISIBLE);
                     button.setVisibility(View.INVISIBLE);
                     proximaQuestao.setVisibility(View.INVISIBLE);
