@@ -92,12 +92,12 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
 
             Spinner spinner = (Spinner) rootView.findViewById(R.id.spResposta);
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.opcoes_array, android.R.layout.simple_spinner_item);
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            adapter.setDropDownViewResource(R.layout.spinner_item);
             spinner.setAdapter(adapter);
 
             Spinner spCategoria = (Spinner) rootView.findViewById(R.id.spCategoria);
             ArrayAdapter<CharSequence> adapterCategoria = ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.categorias_array, android.R.layout.simple_spinner_item);
-            adapterCategoria.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            adapterCategoria.setDropDownViewResource(R.layout.spinner_item);
             spCategoria.setAdapter(adapterCategoria);
 
             Button btSalvar = (Button) rootView.findViewById(R.id.btSalvar);
@@ -133,36 +133,46 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
 
                     if(etAno == null || etAno.getText().toString().equals("")) {
                         mostrarErro("Por favor, digite o ANO!");
+                        etAno.requestFocus();
                     }
                     else if(strCategoria == null || strCategoria.equals("")) {
                         mostrarErro("Selecione uma Categoria");
                     }
                     else if(etCargo == null || etCargo.getText().toString().equals("")) {
                         mostrarErro("Insira o Cargo!");
+                        etCargo.requestFocus();
                     }
                     else if(etInstituicao == null || etInstituicao.getText().toString().equals("")) {
                         mostrarErro("De qual Institução?");
+                        etInstituicao.requestFocus();
                     }
                     else if(etOrgao == null || etOrgao.getText().toString().equals("")) {
                         mostrarErro("Prova de qual Órgão?");
+                        etOrgao.requestFocus();
                     }
                     else if(etQuestao == null || etQuestao.getText().toString().equals("")) {
                         mostrarErro("Faltou a Questão!");
+                        etQuestao.requestFocus();
                     }
                     else if(etAlternativa1 == null || etAlternativa1.getText().toString().equals("")) {
                         mostrarErro("Qual a primeira alternativa?");
+                        etAlternativa1.requestFocus();
                     }
                     else if(etAlternativa2 == null || etAlternativa2.getText().toString().equals("")) {
                         mostrarErro("Digite a segunda alternativa!");
+                        etAlternativa2.requestFocus();
                     }
                     else if(etAlternativa3 == null || etAlternativa3.getText().toString().equals("")) {
                         mostrarErro("Preencha a terceira alternativa!");
+                        etAlternativa3.requestFocus();
                     }
                     else if(etAlternativa4 == null || etAlternativa4.getText().toString().equals("")) {
                         mostrarErro("Qual a quarta alternativa?");
+                        etAlternativa4.requestFocus();
                     }
                     else if(etAlternativa5 == null || etAlternativa5.getText().toString().equals("")) {
                         mostrarErro("Falta apenas a última alternativa!");
+                        etAlternativa5.requestFocus();
                     }
                     else if(spResposta.getSelectedItem() == null || spResposta.getSelectedItem().equals("")) {
                         mostrarErro("A Resposta?");
