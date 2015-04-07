@@ -35,6 +35,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Questoes;
 import ria.especializacao.inf.br.model.Sessao;
@@ -127,20 +129,23 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
 
                     if(resultado)
                     {
-                        Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
                         //radioButton.setBackgroundColor(Color.GREEN);
+                        Crouton.makeText(getActivity(), "Sua Resposta Está Correta", Style.INFO).show();
                         button.setVisibility(View.INVISIBLE);
                         proximaQuestao.setVisibility(View.VISIBLE);
                     }
                     else
                     {
-                        Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
+                        Crouton.makeText(getActivity(), "Sua Resposta Está Incorreta", Style.ALERT).show();
                         //radioButton.setBackgroundColor(Color.RED);
                     }
                 }
                 else
                 {
-                    Toast.makeText(getActivity(), "Selecione Uma Das Opções!!", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "Selecione Uma Das Opções!!", Toast.LENGTH_SHORT).show();
+                    Crouton.makeText(getActivity(), "Selecione Uma Das Opções!!", Style.ALERT).show();
                 }
 
             }
@@ -204,19 +209,19 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
         if(idx == resposta)
         {
             //int acertos = sessaoDAO.getSessoes().getQtdAcertos();
-            Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdAcertos())+" Variavel Acertos:"+acertos);
+            //Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdAcertos())+" Variavel Acertos:"+acertos);
             acertos++;
             sessao.setQtdAcertos(acertos);
             sessao.setQtdErros(erros);
             sessaoDAO.atualizar(sessao);
             sessao =  sessaoDAO.getSessoes();
-            Log.v("Sessao", String.valueOf(acertos));
+            //Log.v("Sessao", String.valueOf(acertos));
             return true;
         }
         else
         {
             //int erros = sessao.getQtdErros();
-            Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdErros())+" Variavel Erros:"+erros);
+            //Log.v("Pegando Valores Banco:", String.valueOf(sessao.getQtdErros())+" Variavel Erros:"+erros);
             erros++;
             sessao.setQtdAcertos(acertos);
             sessao.setQtdErros(erros);
@@ -242,7 +247,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 for(int j = 0; j < listaAux.length; j++)
                 {
                     listaAux[j] = j;
-                    Log.v("ANTES", String.valueOf(listaAux[j]));
+                    //Log.v("ANTES", String.valueOf(listaAux[j]));
                 }
 
                 Collections.shuffle(Arrays.asList(listaAux));
@@ -254,7 +259,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
 
                 //int index = randomList(listaAux.length);
 
-                Log.v("RANDOM", String.valueOf(listaAux[0]));
+                //Log.v("RANDOM", String.valueOf(listaAux[0]));
 
                 ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
                 String titulo = result.get(listaAux[0]).getInstituicao()+" ["+result.get(listaAux[0]).getOrgao()+"]";
