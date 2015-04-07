@@ -26,7 +26,7 @@
             android:layout_below="@id/tvAno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ano" />
+            />
 
         <!-- Categoria -->
         <TextView
@@ -202,9 +202,7 @@
             android:layout_below="@id/tvResposta"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             />
-
 
         <Button
             style="@style/Base.TextAppearance.AppCompat.Button"
