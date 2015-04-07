@@ -207,6 +207,7 @@
 
 
         <Button
+            style="@style/Base.TextAppearance.AppCompat.Button"
             android:id="@+id/btSalvar"
             android:layout_below="@id/spResposta"
             android:text="@string/str_bt_enviar"
