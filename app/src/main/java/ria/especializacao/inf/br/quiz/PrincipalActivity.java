@@ -1,9 +1,12 @@
 package ria.especializacao.inf.br.quiz;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -76,7 +79,7 @@ public class PrincipalActivity extends ActionBarActivity  {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment
+    public class PlaceholderFragment extends Fragment
     {
         private ListView mainListView;
         private String[] strListView;
@@ -145,40 +148,58 @@ public class PrincipalActivity extends ActionBarActivity  {
                 }
             }); */
 
-            CustomList adapter = new
-                    CustomList(getActivity(), opcoes, imageId);
-            list=(ListView)rootView.findViewById(R.id.mainListView);
-            list.setAdapter(adapter);
+            TextView erroConexao = (TextView) rootView.findViewById(R.id.erroConexao);
 
-            list.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            if(isOnline())
             {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view,
-                                        int position, long id)
+                erroConexao.setVisibility(View.INVISIBLE);
+                CustomList adapter = new
+                        CustomList(getActivity(), opcoes, imageId);
+                list=(ListView)rootView.findViewById(R.id.mainListView);
+                list.setAdapter(adapter);
+
+                list.setOnItemClickListener(new AdapterView.OnItemClickListener()
                 {
-                    //Toast.makeText(getActivity(), "You Clicked at " +opcoes[position], Toast.LENGTH_SHORT).show();
-                    switch (opcoes[position])
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view,
+                                            int position, long id)
                     {
-                        case "Começar":
-                            Intent intent = new Intent(getActivity(), CategoriaActivity.class);
-                            startActivity(intent);
-                            break;
-                        case "Favoritos":
-                            Toast.makeText(getActivity(), "Atividade em Construção", Toast.LENGTH_SHORT).show();
-                            break;
-                        case "Enviar Questão":
-                            Intent intentEQ = new Intent(getActivity(), EnviarQuestaoActivity.class);
-                            startActivity(intentEQ);
-                            break;
-                        case "Desempenho":
-                            intent = new Intent(getActivity(), EstatisticaActivity.class);
-                            startActivity(intent);
-                            break;
+                        //Toast.makeText(getActivity(), "You Clicked at " +opcoes[position], Toast.LENGTH_SHORT).show();
+                        switch (opcoes[position])
+                        {
+                            case "Começar":
+                                Intent intent = new Intent(getActivity(), CategoriaActivity.class);
+                                startActivity(intent);
+                                break;
+                            case "Favoritos":
+                                Toast.makeText(getActivity(), "Atividade em Construção", Toast.LENGTH_SHORT).show();
+                                break;
+                            case "Enviar Questão":
+                                Intent intentEQ = new Intent(getActivity(), EnviarQuestaoActivity.class);
+                                startActivity(intentEQ);
+                                break;
+                            case "Desempenho":
+                                intent = new Intent(getActivity(), EstatisticaActivity.class);
+                                startActivity(intent);
+                                break;
+                        }
                     }
-                }
-            });
+                });
+            }
+            else
+            {
+                erroConexao.setVisibility(View.VISIBLE);
+                erroConexao.setText("Você Não Está Conectado a Internet :(");
+            }
 
             return rootView;
+        }
+
+        public boolean isOnline()
+        {
+            ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+            return networkInfo != null && networkInfo.isConnectedOrConnecting();
         }
     }
 
