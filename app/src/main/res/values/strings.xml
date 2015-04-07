@@ -32,7 +32,7 @@
     <string-array name="categorias_array">
         <item>Engenharia de Software</item>
         <item>Redes</item>
-        <item>Governança/Gestão de TI</item>
+        <item>Governança</item>
         <item>Desenvolvimento</item>
         <item>Banco de Dados</item>
     </string-array>

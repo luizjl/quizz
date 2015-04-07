@@ -45,6 +45,7 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
     private ArrayAdapter<String> categoriaAdapter;
     private TextView idCategoria;
     private TextView nomeCategoria;
+    private ProgressDialog progressDialog;
 
     public CategoriaFragment(){}
 
@@ -78,6 +79,7 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
+
         categoriaAdapter = new ArrayAdapter<String>
                 (
                         getActivity(),
@@ -137,11 +139,26 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
     public class FetchCategoriaTask extends AsyncTask<Void, Void, String[]>
     {
 
+
+        protected void onPreExecute()
+        {
+            progressDialog = new ProgressDialog(getActivity());
+            progressDialog.setTitle("Obtendo dados");
+            progressDialog.setMessage("Por favor aguarde..");
+            progressDialog.setCancelable(false);
+            progressDialog.show();
+        }
+
+
         @Override
         public void onPostExecute(String[] result)
         {
             if(result != null)
             {
+                if (progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
+
                 categoriaAdapter.clear();
                 Arrays.sort(result);
 
