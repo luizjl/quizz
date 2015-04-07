@@ -1,6 +1,8 @@
 package ria.especializacao.inf.br.quiz;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +21,11 @@ public class QuestaoActivity extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questao);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        //actionBar.setTitle("Questão");
+
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.rgb(0, 191, 255)));
 
         if (savedInstanceState == null)
         {
