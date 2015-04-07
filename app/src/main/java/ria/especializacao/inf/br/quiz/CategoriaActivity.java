@@ -1,5 +1,7 @@
 package ria.especializacao.inf.br.quiz;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +21,7 @@ public class CategoriaActivity extends ActionBarActivity
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Categorias");
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.rgb(0, 191, 255)));
 
         if (savedInstanceState == null)
         {

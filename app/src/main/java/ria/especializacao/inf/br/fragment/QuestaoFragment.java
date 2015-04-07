@@ -1,8 +1,10 @@
 package ria.especializacao.inf.br.fragment;
 
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -34,6 +36,7 @@ import java.util.Random;
 import ria.especializacao.inf.br.database.SessaoDAO;
 import ria.especializacao.inf.br.model.Questoes;
 import ria.especializacao.inf.br.model.Sessao;
+import ria.especializacao.inf.br.quiz.QuestaoActivity;
 import ria.especializacao.inf.br.utils.ParserJson;
 import ria.especializacao.inf.br.quiz.R;
 
@@ -140,7 +143,13 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 {
 
                     cabecalhoQuestao.setText(questoesList.get(cont).getCabecalho());
-                    for (int i = 0; i < alternativaQuestao.getChildCount(); i++) {
+
+                    ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
+                    String titulo = questoesList.get(cont).getInstituicao()+" ["+questoesList.get(cont).getOrgao()+"]";
+                    actionBar.setTitle(titulo);
+
+                    for (int i = 0; i < alternativaQuestao.getChildCount(); i++)
+                    {
                         ((RadioButton) alternativaQuestao.getChildAt(i)).setText(questoesList.get(cont).getAlternativas().get(i));
                     }
 
@@ -152,6 +161,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     View radioButton = alternativaQuestao.findViewById(radioButtonID);
                     radioButton.setBackgroundColor(Color.TRANSPARENT);
                     alternativaQuestao.clearCheck();
+
                 }
                 else
                 {
@@ -205,6 +215,11 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
         {
             if(!result.isEmpty())
             {
+                ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
+                String titulo = result.get(0).getInstituicao()+" ["+result.get(0).getOrgao()+"]";
+                actionBar.setTitle(titulo);
+                //Log.v("ORGAO", result.get(0).getOrgao());
+
                 cabecalhoQuestao.setText(result.get(0).getCabecalho());
 
                 for(int i = 0; i < alternativaQuestao.getChildCount(); i++)
