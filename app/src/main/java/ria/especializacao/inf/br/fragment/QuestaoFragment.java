@@ -1,5 +1,6 @@
 package ria.especializacao.inf.br.fragment;
 
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
@@ -59,6 +60,7 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     private Button button;
     private Integer[] listaAux;
     private int indexAux;
+    private ProgressDialog progressDialog;
 
     public QuestaoFragment()
     {
@@ -235,11 +237,23 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
 
     public class FetchQuestaoTask extends AsyncTask<Integer, Void, List<Questoes>>
     {
+        protected void onPreExecute()
+        {
+            progressDialog = new ProgressDialog(getActivity());
+            progressDialog.setTitle("Obtendo dados");
+            progressDialog.setMessage("Por favor aguarde..");
+            progressDialog.setCancelable(false);
+            progressDialog.show();
+        }
+
         @Override
         public void onPostExecute(List<Questoes> result)
         {
             if(!result.isEmpty())
             {
+                if (progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
                 //Log.v("TAMANHO", String.valueOf(result.size()));
 
                 listaAux = new Integer[result.size()];

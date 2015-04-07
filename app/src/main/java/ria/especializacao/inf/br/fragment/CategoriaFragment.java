@@ -138,8 +138,6 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
 
     public class FetchCategoriaTask extends AsyncTask<Void, Void, String[]>
     {
-
-
         protected void onPreExecute()
         {
             progressDialog = new ProgressDialog(getActivity());
@@ -148,7 +146,6 @@ public class CategoriaFragment extends android.support.v4.app.Fragment
             progressDialog.setCancelable(false);
             progressDialog.show();
         }
-
 
         @Override
         public void onPostExecute(String[] result)
