@@ -29,6 +29,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
@@ -53,6 +55,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
     private SessaoDAO sessaoDAO;
     private int cont = 1;
     private Button button;
+    private Integer[] listaAux;
+    private int indexAux;
 
     public QuestaoFragment()
     {
@@ -114,23 +118,31 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 // PEGAR ID DO RÁDIO SELECIOMNADO
                 int radioButtonID = alternativaQuestao.getCheckedRadioButtonId();
                 View radioButton = alternativaQuestao.findViewById(radioButtonID);
-                int idx = alternativaQuestao.indexOfChild(radioButton);
 
-                //Toast.makeText(getActivity(), String.valueOf(validarQuestao(idx, questoesList.get(indiceList).getResposta())), Toast.LENGTH_SHORT).show();
-                boolean resultado = validarQuestao(idx, questoesList.get(indiceList).getResposta());
-
-                if(resultado)
+                if(radioButton != null)
                 {
-                    Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
-                    radioButton.setBackgroundColor(Color.GREEN);
+                    int idx = alternativaQuestao.indexOfChild(radioButton);
+                    //Toast.makeText(getActivity(), String.valueOf(validarQuestao(idx, questoesList.get(indiceList).getResposta())), Toast.LENGTH_SHORT).show();
+                    boolean resultado = validarQuestao(idx, questoesList.get(indiceList).getResposta());
+
+                    if(resultado)
+                    {
+                        Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
+                        radioButton.setBackgroundColor(Color.GREEN);
+                    }
+                    else
+                    {
+                        Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
+                        radioButton.setBackgroundColor(Color.RED);
+                    }
+
+                    proximaQuestao.setVisibility(View.VISIBLE);
                 }
                 else
                 {
-                    Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
-                    radioButton.setBackgroundColor(Color.RED);
+                    Toast.makeText(getActivity(), "Selecione uma Das Opções!!", Toast.LENGTH_SHORT).show();
                 }
 
-                proximaQuestao.setVisibility(View.VISIBLE);
             }
         });
 
@@ -142,15 +154,17 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                 if(cont < questoesList.size())
                 {
 
-                    cabecalhoQuestao.setText(questoesList.get(cont).getCabecalho());
+                    //int index = randomList(listaAux.length);
+
+                    cabecalhoQuestao.setText(questoesList.get(listaAux[cont]).getCabecalho());
 
                     ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
-                    String titulo = questoesList.get(cont).getInstituicao()+" ["+questoesList.get(cont).getOrgao()+"]";
+                    String titulo = questoesList.get(listaAux[cont]).getInstituicao()+" ["+questoesList.get(listaAux[cont]).getOrgao()+"]";
                     actionBar.setTitle(titulo);
 
                     for (int i = 0; i < alternativaQuestao.getChildCount(); i++)
                     {
-                        ((RadioButton) alternativaQuestao.getChildAt(i)).setText(questoesList.get(cont).getAlternativas().get(i));
+                        ((RadioButton) alternativaQuestao.getChildAt(i)).setText(questoesList.get(listaAux[cont]).getAlternativas().get(i));
                     }
 
                     cont++;
@@ -168,7 +182,10 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     alternativaQuestao.setVisibility(View.INVISIBLE);
                     button.setVisibility(View.INVISIBLE);
                     proximaQuestao.setVisibility(View.INVISIBLE);
-                    cabecalhoQuestao.setText("VOCÊ JÁ RESPONDEU TODAS AS PERGUNTAS DESSA CATEGORIA!");
+
+                    ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
+                    String titulo = "FIM";
+                    actionBar.setTitle(titulo);
                 }
             }
         });
@@ -215,16 +232,37 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
         {
             if(!result.isEmpty())
             {
+                //Log.v("TAMANHO", String.valueOf(result.size()));
+
+                listaAux = new Integer[result.size()];
+
+                for(int j = 0; j < listaAux.length; j++)
+                {
+                    listaAux[j] = j;
+                    Log.v("ANTES", String.valueOf(listaAux[j]));
+                }
+
+                Collections.shuffle(Arrays.asList(listaAux));
+
+                /*for(int j = 0; j < listaAux.length; j++)
+                {
+                    Log.v("DEPOIS", String.valueOf(listaAux[j]));
+                }*/
+
+                //int index = randomList(listaAux.length);
+
+                Log.v("RANDOM", String.valueOf(listaAux[0]));
+
                 ActionBar actionBar = ((QuestaoActivity) getActivity()).getSupportActionBar();
-                String titulo = result.get(0).getInstituicao()+" ["+result.get(0).getOrgao()+"]";
+                String titulo = result.get(listaAux[0]).getInstituicao()+" ["+result.get(listaAux[0]).getOrgao()+"]";
                 actionBar.setTitle(titulo);
                 //Log.v("ORGAO", result.get(0).getOrgao());
 
-                cabecalhoQuestao.setText(result.get(0).getCabecalho());
+                cabecalhoQuestao.setText(result.get(listaAux[0]).getCabecalho());
 
                 for(int i = 0; i < alternativaQuestao.getChildCount(); i++)
                 {
-                    ((RadioButton) alternativaQuestao.getChildAt(i)).setText(result.get(0).getAlternativas().get(i));
+                    ((RadioButton) alternativaQuestao.getChildAt(i)).setText(result.get(listaAux[0]).getAlternativas().get(i));
                 }
 
                 questoesList = result;
@@ -283,4 +321,9 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
             return questaoList;
         }
     }
+
+    /*public int randomList(int listaSize)
+    {
+        return  (int)(Math.random()*listaSize);
+    }*/
 }

@@ -89,15 +89,15 @@ public class PrincipalActivity extends ActionBarActivity  {
                     "Começar",
                     "Favoritos",
                     "Enviar Questão",
-                    "Estatísticas"
+                    "Desempenho"
                 };
 
         Integer[] imageId =
                 {
-                    R.drawable.help,
-                    R.drawable.rating_favorite,
-                    R.drawable.content_discard,
-                    R.drawable.collections_cloud,
+                    R.drawable.ic_school_grey600_48dp,
+                    R.drawable.ic_grade_grey600_48dp,
+                    R.drawable.ic_forum_grey600_48dp,
+                    R.drawable.ic_trending_up_grey600_48dp
                 };
 
         public PlaceholderFragment()
@@ -157,16 +157,15 @@ public class PrincipalActivity extends ActionBarActivity  {
                 public void onItemClick(AdapterView<?> parent, View view,
                                         int position, long id)
                 {
-                    Toast.makeText(getActivity(), "You Clicked at " +opcoes[position], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "You Clicked at " +opcoes[position], Toast.LENGTH_SHORT).show();
                     switch (opcoes[position])
                     {
                         case "Começar":
                             Intent intent = new Intent(getActivity(), CategoriaActivity.class);
                             startActivity(intent);
-                            //Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
                         case "Favoritos":
-                            Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Atividade em Construção", Toast.LENGTH_SHORT).show();
                             break;
                         case "Enviar Questão":
                             Intent intentEQ = new Intent(getActivity(), EnviarQuestaoActivity.class);
@@ -175,7 +174,6 @@ public class PrincipalActivity extends ActionBarActivity  {
                         case "Desempenho":
                             intent = new Intent(getActivity(), EstatisticaActivity.class);
                             startActivity(intent);
-                            //Toast.makeText(getActivity(), "Você Clicou Em " + strListView[position], Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }

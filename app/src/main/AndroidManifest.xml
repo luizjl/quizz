@@ -42,14 +42,6 @@
                 android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name="ria.especializacao.inf.br.quiz.DesempenhoActivity"
-            android:label="@string/title_activity_questao"
-            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
-        </activity>
-        <activity
             android:name="ria.especializacao.inf.br.quiz.EnviarQuestaoActivity"
             android:label="@string/title_activity_enviar_questao"
             android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity" >
