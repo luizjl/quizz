@@ -128,14 +128,14 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     if(resultado)
                     {
                         Toast.makeText(getActivity(), "Sua Resposta Está Correta", Toast.LENGTH_LONG).show();
-                        radioButton.setBackgroundColor(Color.GREEN);
+                        //radioButton.setBackgroundColor(Color.GREEN);
                         button.setVisibility(View.INVISIBLE);
                         proximaQuestao.setVisibility(View.VISIBLE);
                     }
                     else
                     {
                         Toast.makeText(getActivity(), "Sua Resposta Está Incorreta", Toast.LENGTH_LONG).show();
-                        radioButton.setBackgroundColor(Color.RED);
+                        //radioButton.setBackgroundColor(Color.RED);
                     }
                 }
                 else
@@ -175,9 +175,8 @@ public class QuestaoFragment extends android.support.v4.app.Fragment
                     // LIMPANDO CHECKBOX E UNCHEKING
                     int radioButtonID = alternativaQuestao.getCheckedRadioButtonId();
                     View radioButton = alternativaQuestao.findViewById(radioButtonID);
-                    radioButton.setBackgroundColor(Color.TRANSPARENT);
                     alternativaQuestao.clearCheck();
-
+                    radioButton.setBackgroundColor(Color.TRANSPARENT);
                 }
                 else
                 {
