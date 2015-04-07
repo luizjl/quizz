@@ -73,7 +73,9 @@ public class ParserJson {
                 alternativas = readStringArray(reader);
             } else if (name.equals("resposta")) {
                 resposta = reader.nextInt();
-            } else {
+            }else if (name.equals("orgao")) {
+                orgao = reader.nextString();
+            }else {
                 reader.skipValue();
             }
         }
