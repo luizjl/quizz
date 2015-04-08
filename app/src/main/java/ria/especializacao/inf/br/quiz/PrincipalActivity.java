@@ -1,5 +1,6 @@
 package ria.especializacao.inf.br.quiz;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -79,7 +80,8 @@ public class PrincipalActivity extends ActionBarActivity  {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public class PlaceholderFragment extends Fragment
+
+    public static class PlaceholderFragment extends Fragment
     {
         private ListView mainListView;
         private String[] strListView;
@@ -195,9 +197,9 @@ public class PrincipalActivity extends ActionBarActivity  {
             return rootView;
         }
 
-        public boolean isOnline()
+        private boolean isOnline( )
         {
-            ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+            ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = cm.getActiveNetworkInfo();
             return networkInfo != null && networkInfo.isConnectedOrConnecting();
         }
