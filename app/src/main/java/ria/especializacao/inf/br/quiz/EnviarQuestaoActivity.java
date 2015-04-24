@@ -1,8 +1,14 @@
 package ria.especializacao.inf.br.quiz;
 
+import android.annotation.TargetApi;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -24,7 +30,6 @@ import java.util.List;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import ria.especializacao.inf.br.database.SugestaoDAO;
-import ria.especializacao.inf.br.fragment.ListaQuestoesDialogFragment;
 import ria.especializacao.inf.br.model.Questoes;
 
 public class EnviarQuestaoActivity extends ActionBarActivity {
@@ -65,7 +70,8 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home) {
+            this.finish();
             return true;
         }
 
@@ -102,6 +108,7 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
 
             Button btSalvar = (Button) rootView.findViewById(R.id.btSalvar);
             btSalvar.setOnClickListener(new Button.OnClickListener() {
+                @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
                 public void onClick(View v) {
 
                     ds.open();
@@ -184,15 +191,26 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
 
                         long res = ds.adicionarQuestao(q);
 
-                        //Log.i("ADICIONANDO", String.valueOf(res));
-
-                        if(res > 0)
+                        if(res > 0) {
                             Toast.makeText(getActivity(), "Questão Enviada com sucesso!", Toast.LENGTH_LONG).show();
 
-                        DialogFragment newFragment = ListaQuestoesDialogFragment.newInstance();
-                        newFragment.show(getActivity().getFragmentManager(), "dialog");
-                    }
+                            AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
+                            //alertDialog.setTitle("Titulo");
+                            alertDialog.setMessage("Sugestão cadastrada com sucesso!");
+                            alertDialog.setNeutralButton("OK", new  DialogInterface.OnClickListener() {
+                                public  void  onClick(DialogInterface dialog, int  whichButton) {
+                                    getActivity().finish();
+                                }
+                            });
+
+                            alertDialog.show();
+
+                            //Intent intent = new Intent(getActivity(), SugestoesActivity.class);
+                            //startActivity(intent);
+                        }
+
+                    }
 
                 }
             });
@@ -255,8 +273,6 @@ public class EnviarQuestaoActivity extends ActionBarActivity {
 
             Crouton.makeText(getActivity(), msg, Style.ALERT).show();
         }
-
-
 
     }
 

@@ -93,7 +93,8 @@ public class PrincipalActivity extends ActionBarActivity  {
                     "Começar",
                     "Favoritos",
                     "Enviar Questão",
-                    "Desempenho"
+                    "Desempenho",
+                    "Sair"
                 };
 
         Integer[] imageId =
@@ -101,7 +102,9 @@ public class PrincipalActivity extends ActionBarActivity  {
                     R.drawable.ic_school_grey600_48dp,
                     R.drawable.ic_grade_grey600_48dp,
                     R.drawable.ic_forum_grey600_48dp,
-                    R.drawable.ic_trending_up_grey600_48dp
+                    R.drawable.ic_trending_up_grey600_48dp,
+                    R.drawable.ic_cancel_grey600_48dp
+
                 };
 
         public PlaceholderFragment()
@@ -177,11 +180,17 @@ public class PrincipalActivity extends ActionBarActivity  {
                                 Toast.makeText(getActivity(), "Atividade em Construção", Toast.LENGTH_SHORT).show();
                                 break;
                             case "Enviar Questão":
-                                Intent intentEQ = new Intent(getActivity(), EnviarQuestaoActivity.class);
+                                Intent intentEQ = new Intent(getActivity(), SugestoesActivity.class);
                                 startActivity(intentEQ);
                                 break;
                             case "Desempenho":
                                 intent = new Intent(getActivity(), EstatisticaActivity.class);
+                                startActivity(intent);
+                                break;
+                            case "Sair":
+                                intent = new Intent(Intent.ACTION_MAIN);
+                                intent.addCategory(Intent.CATEGORY_HOME);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                                 break;
                         }

@@ -11,46 +11,55 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="ria.especializacao.inf.br.quiz.PrincipalActivity"
+            android:name=".PrincipalActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="ria.especializacao.inf.br.quiz.CategoriaActivity"
+            android:name=".CategoriaActivity"
             android:label="@string/title_activity_categoria"
-            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".PrincipalActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name="ria.especializacao.inf.br.quiz.EstatisticaActivity"
+            android:name=".EstatisticaActivity"
             android:label="@string/app_name"
-            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".PrincipalActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name="ria.especializacao.inf.br.quiz.QuestaoActivity"
+            android:name=".QuestaoActivity"
             android:label="@string/title_activity_questao"
-            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".PrincipalActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
         </activity>
         <activity
-            android:name="ria.especializacao.inf.br.quiz.EnviarQuestaoActivity"
+            android:name=".EnviarQuestaoActivity"
             android:label="@string/title_activity_enviar_questao"
-            android:parentActivityName="ria.especializacao.inf.br.quiz.PrincipalActivity"
-            android:screenOrientation="portrait">
+            android:parentActivityName=".SugestoesActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ria.especializacao.inf.br.quiz.SugestoesActivity" />
+        </activity>
+        <activity
+            android:name=".SugestoesActivity"
+            android:label="@string/title_activity_sugestoes"
+            android:parentActivityName=".PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ria.especializacao.inf.br.quiz.PrincipalActivity" />
